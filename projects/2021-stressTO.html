@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .fileSize {
+            margin-top: 3px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body alink="#4c80b2" link="#000064" text="#404040" vlink="#000064">
+    <br>
+    <br>
+    <br>
+    <title>Alternating Optimization of Design and Stress for Stress-Constrained Topology Optimization</title>
+
+
+    <div style="width:800px; margin: 0 auto; text-align: justify;">
+        <div style="text-align: center;">
+            <h1>
+                Alternating Optimization of Design and Stress for Stress-Constrained Topology Optimization
+            </h1>
+            <h3>Structural and Multidisciplinary Optimization, 2021</h3>
+            <center>
+                <table width="800px">
+                    <tbody>
+                        <tr align="center">
+                            <td width="22%">Xiaoya Zhai</td>
+                            <td width="20%">Falai Chen</td>
+                            <td width="20%"><a href="http://www.jun-wu.net">Jun Wu</a></td>
+                        </tr>
+                        <tr align="center">
+                            <td>USTC, TU Delft</td>
+                            <td>USTC</td>
+                            <td>TU Delft</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+
+            <br \="">
+            <br \="">
+        </div>
+
+        <h2>Abstract</h2>
+        Handling stress constraints is an important topic in topology optimization. In this paper, we introduce an interpretation of stresses as optimization variables, leading to an augmented Lagrangian formulation. This formulation takes two sets of optimization variables, i.e., an \textit{auxiliary} stress variable per element, in addition to a density variable as in conventional density-based approaches. The auxiliary stress is related to the actual stress (i.e., computed by its definition) by an equality constraint. When the equality constraint is strictly satisfied, an upper bound imposed on the auxiliary stress design variable equivalently applies to the actual stress. The equality constraint is incorporated into the objective function as linear and quadratic terms using an augmented Lagrangian form. We further show that this formulation is \textit{separable} regarding its two sets of variables. This gives rise to an efficient augmented Lagrangian solver known as the alternating direction method of multipliers (ADMM). In each iteration, the density variables, auxiliary stress variables, and Lagrange multipliers are alternatingly updated. The introduction of auxiliary stress variables enlarges the search space. We demonstrate the effectiveness and efficiency of the proposed formulation and solution strategy using simple truss examples and a dozen of continuum structure optimization settings.
+
+        <h2>Keywords</h2>
+        Topology optimization; Stress constraints; Augmented Lagrangian; Alternating direction method of multipliers
+
+        <h2>Acknowledgements</h2>
+        <p>We would like to thank the anonymous reviewers for their constructive suggestions. X. Zhai and F. Chen are partially supported by the National Natural Science Foundation of China (NSFC) under Grant number 61972368. X. Zhai is supported the China Scholarship Council (CSC) under Grant number 201906340020.</p>
+
+        <h2>Download</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td align="right"><a href="https://www.dropbox.com/s/q6ht8ot4egr98ve/SMO2021_StressTO.pdf?dl=0" target="_blank"><img src="../data/teaser/pdf.png"></a></td>
+                    <td width="120" align="left"><a href="https://www.dropbox.com/s/q6ht8ot4egr98ve/SMO2021_StressTO.pdf?dl=0" target="_blank">Paper</a><p class="fileSize">18.3 MB</p></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Bibtex</h2>
+        <pre>@article{Zhai2021SMO,
+    title={Alternating optimization of design and stress for stress-constrained topology optimization},
+    author={Zhai, Xiaoya and Chen, Falai and Wu, Jun},
+    journal={Structural and Multidisciplinary Optimization},
+    volume={64},
+    number={4},
+    pages={2323--2342},
+    year={2021},
+    doi={https://doi.org/10.1007/s00158-021-02985-1}, 
+    publisher={Springer}
+}
+</pre>
+    </div>
+</body>
+</html>

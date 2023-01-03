@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .fileSize {
+            margin-top: 3px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body alink="#4c80b2" link="#000064" text="#404040" vlink="#000064">
+    <br>
+    <br>
+    <br>
+    <title>Infill Optimization for Additive Manufacturing</title>
+
+
+    <div style="width:800px; margin: 0 auto; text-align: justify;">
+        <div style="text-align: center;">
+            <h1>Infill Optimization for Additive Manufacturing -- Approaching Bone-like Porous Structures</h1>
+            <h3>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2018</h3>
+            <center>
+                <table width="800px">
+                    <tbody>
+                        <tr align="center">
+                            <td width="20%"><a href="http://www.jun-wu.net">Jun Wu</a></td>
+                            <td width="20%"><a href="http://www.topopt.dtu.dk">Niels Aage</a></td>
+                            <td width="22%"><a href="http://wwwcg.in.tum.de">Rüdiger Westermann</a></td>
+                            <td width="20%"><a href="http://www.topopt.dtu.dk">Ole Sigmund</a></td>
+                        </tr>
+                        <tr align="center">
+                            <td>now at TU Delft</td>
+                            <td>DTU</td>
+                            <td>TU Munich</td>
+                            <td>DTU</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+
+            <br \="">
+            <br \="">
+            <img src="../data/image/bone-explanation.png" width="800" border="0">
+            <p >From left to right: Cross-section of a human femur showing cortical structures on the shell and trabecular structures in the interior. Illustration of principal stress directions under major mechanical loads. Cross-section of the optimized porous infill in a 3D bone model. The 3D printed bone model.</p>
+        </div>
+
+        <h2>Abstract</h2>
+        Porous structures such as trabecular bone are widely seen in nature. These structures are lightweight and exhibit strong mechanical properties. In this paper, we present a method to generate bone-like porous structures as lightweight infill for additive manufacturing. Our method builds upon and extends voxel-wise topology optimization. In particular, for the purpose of generating sparse yet stable structures distributed in the interior of a given shape, we propose upper bounds on the localized material volume in the proximity of each voxel in the design domain. We then aggregate the local per-voxel constraints by their p-norm into an equivalent global constraint, in order to facilitate an efficient optimization process. Implemented on a high-resolution topology optimization framework, our results demonstrate mechanically optimized, detailed porous structures which mimic those found in nature. We further show variants of the optimized structures subject to different design specifications, and we analyze the optimality and robustness of the obtained structures.
+
+        <h2>3D Prints</h2>
+        <img src="../data/image/bone-infill-prints.png" width="800" border="0">
+
+        <h2>Gif Animation</h2>
+        <img src="../data/image/bone-infill-animation.gif" width="400" border="0">
+
+        <h2>Related Projects</h2>
+        <p><a href="./2016-rhombic-infill.html">Self-Supporting Rhombic Infill Structures for Additive Manufacturing</a></p>
+        <p><a href="./2016-GPU-topopt.html">A System for High-Resolution Topology Optimization</a></p>
+
+        <h2>Acknowledgements</h2>
+        <p >The authors gratefully acknowledge the support from the H.C. Ørsted Postdoc Programme at the Technical University of Denmark, which has received funding from the People Programme (Marie Curie Actions) of the European Union's Seventh Framework Programme (FP7/2007-2013) under REA grant agreement no. 609405 (COFUNDPostdocDTU), and the support from the Villum foundation through the NextTop project.</p>
+
+        <br>
+        <h2>Download</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td align="right"><a href="../data/pdf/TVCG2017-infill.pdf" target="_blank"><img src="../data/teaser/pdf.png"></a></td>
+                    <td width="120" align="left"><a href="../data/pdf/TVCG2017-infill.pdf" target="_blank">Paper</a><p class="fileSize">7.7 MB</p></td>
+
+                    <td align="right"><a href="../data/models/TVCG2017-Bone-infill-3DModels.zip" target="_blank"><img src="../data/teaser/zip.png"></a></td>
+                    <td width="120" align="left"><a href="../data/models/TVCG2017-Bone-infill-3DModels.zip" target="_blank">3D Model</a><br><p class="fileSize">58.1 MB</p></td>
+
+                    <td align="right"><a href="../data/image/bone-infill-animation.gif" target="_blank"><img src="../data/teaser/gif.png"></a></td>
+                    <td width="120" align="left"><a href="../data/image/bone-infill-animation.gif" target="_blank">Animation</a><br><p class="fileSize">6.7 MB</p></td>
+
+                    <td align="right"><a href="https://www.dropbox.com/s/77bmh3lnf5qxdjs/Infill.m?dl=0" target="_blank"><img src="../data/teaser/exe.png"></a></td>
+                    <td width="120" align="left"><a href="https://www.dropbox.com/s/77bmh3lnf5qxdjs/Infill.m?dl=0" target="_blank">Code (Matlab)</a><br><p class="fileSize">7.2 KB</p></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <h2>Bibtex</h2>
+<pre>@article{Wu2018TVCG, 
+    author={Wu, Jun and Aage, Niels and Westermann, R\"udiger and Sigmund, Ole}, 
+    title={Infill Optimization for Additive Manufacturing -- Approaching Bone-like Porous Structures}, 
+    journal={IEEE Transactions on Visualization and Computer Graphics}, 
+    year={2018}, 
+    volume={24}, 
+    number={2}, 
+    pages={1127-1140}, 
+    doi={http://dx.doi.org/10.1109/TVCG.2017.2655523}, 
+    ISSN={1077-2626}, 
+    month={February},
+}
+</pre>
+    </div>
+</body>
+</html>

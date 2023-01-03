@@ -1,0 +1,92 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .fileSize {
+            margin-top: 3px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body alink="#4c80b2" link="#000064" text="#404040" vlink="#000064">
+    <br>
+    <br>
+    <br>
+    <title>Topology Optimization for Additive Manufacturing</title>
+
+
+    <div style="width:800px; margin: 0 auto; text-align: justify;">
+        <div style="text-align: center;">
+            <h1>Continuous Optimization of Adaptive Quadtree Structures</h1>
+            <h3>Computer-Aided Design (CAD), 2018</h3>
+            <p class="content">Special issue of Solid and Physical Modeling (SPM) 2018</p>
+            <center>
+                <table width="800px">
+                    <tbody>
+                        <tr align="center">
+                            <td width="20%"><a href="http://www.jun-wu.net">Jun Wu</a></td>
+                        </tr>
+                        <tr align="center">
+                            <td>TU Delft</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+
+            <br \="">
+            <br \="">
+            <img src="../data/image/rocking_horse.png" width="800" border="0">
+            <p >The rocking horse is filled with a uniform rectangular pattern (a) and the continuously optimized quadtree structure (b). The adaptive quadtree is three times stiffer than the uniform pattern, regarding the prescribed loads which are indicated by blue arrows; The compliances of the uniform and adaptive pattern are 131.6 and 43.5, respectively. The two designs use the same amount of material. The bottom row shows the continuous quadtree at four iterations.</p>
+        </div>
+        
+        <h2>Abstract</h2>
+        We present a novel continuous optimization method to the discrete problem of quadtree optimization. The optimization aims at achieving a quadtree structure with the highest mechanical stiffness, where the edges in the quadtree are interpreted as structural elements carrying mechanical loads. We formulate quadtree optimization as a continuous material distribution problem. The discrete design variables (i.e., to refine or not to refine) are replaced by continuous variables on multiple levels in the quadtree hierarchy. In discrete quadtree optimization, a cell is only eligible for refinement if its parent cell has been refined. We propose a continuous analogue to this dependency for continuous multi-level design variables, and integrate it in the iterative optimization process. Our results show that the continuously optimized quadtree structures perform much stiffer than uniform patterns and the heuristically optimized counterparts. We demonstrate the use of adaptive structures as lightweight infill for 3D printed parts, where uniform geometric patterns have been typically used in practice.
+     
+        <h2>3D prints</h2>
+        <img src="../data/image/quadtree_models.png" width="800" border="0">
+        <img src="../data/image/3dprints2.png" width="800" border="0">
+        <img src="../data/image/Beam_quadtree.gif" width="600" border="0">
+        <p>Continuous quadtree optimization of the MBB beam.</p>
+
+        <br>
+        <h2>Download</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td align="right"><a href="../data/pdf/SPM2018.pdf" target="_blank"><img src="../data/teaser/pdf.png"></a></td>
+                    <td width="120" align="left"><a href="../data/pdf/SPM2018.pdf" target="_blank">Paper</a><p class="fileSize">7.3 MB</p></td>
+
+                    <td align="right"><a href="https://www.dropbox.com/s/3bju7htm2qho7gf/Slides-SPM2018-Quadtree.pdf?dl=0" target="_blank"><img src="../data/teaser/pdf.png"></a></td>
+                    <td width="120" align="left"><a href="https://www.dropbox.com/s/3bju7htm2qho7gf/Slides-SPM2018-Quadtree.pdf?dl=0" target="_blank">Slides</a><p class="fileSize">1.9 MB</p></td>
+
+                    <td align="right"><a href="https://www.dropbox.com/s/by1ti61nkhspw7b/topQuadtreeOC.m?dl=0" target="_blank"><img src="../data/teaser/exe.png"></a></td>
+                    <td width="120" align="left"><a href="https://www.dropbox.com/s/by1ti61nkhspw7b/topQuadtreeOC.m?dl=0" target="_blank">Code (Matlab)</a><br><p class="fileSize">26.0 KB</p></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <h2>Acknowledgements</h2>
+        <p>We thank Rob Scharff for preparing the physical tests, and Krister Svanberg for the Matlab MMA code. </p>
+
+        <h2>Related Projects</h2>
+        <p><a href="./2017-shell-infill.html">Minimum Compliance Topology Optimization of Shell-Infill Composites for Additive Manufacturing</a></p>
+        <p><a href="./2017-bone-infill.html">Infill Optimization for Additive Manufacturing -- Approaching Bone-like Porous Structures</a></p>
+        <p><a href="./2016-rhombic-infill.html">Self-Supporting Rhombic Infill Structures for Additive Manufacturing</a></p>
+        <p><a href="./2016-GPU-topopt.html">A System for High-Resolution Topology Optimization</a></p>
+
+        <h2>Bibtex</h2>
+<pre>@article{Wu2018SPM, 
+    author={Wu, Jun}, 
+    title={Continuous Optimization of Adaptive Quadtree Structures}, 
+    journal={Computer-Aided Design}, 
+    volume={102},
+    pages={72-82},
+    year={2018}, 
+    doi={https://doi.org/10.1016/j.cad.2018.04.008},
+    issn={},
+}
+</pre>
+    </div>
+</body>
+</html>

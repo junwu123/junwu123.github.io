@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 900;
+    color: rgb(20,20,20);
+    font-size: 4em;
+}
+
+body{
+    display: table;
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+
+.jumbotron {
+    display: table;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    background: url(images/mesh.jpg) no-repeat top center scroll;
+    background-size: cover;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.marketing {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    width: 80%;
+}
+
+.section-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 2.0em;
+    padding-top: 20px;
+}
+
+.profile {
+/*    background-color: white;*/
+    margin-top: -6%;
+/*    font-size: 1.1em;*/
+}
+
+.contact {
+    background-color: white;
+    word-wrap;
+    break-word;
+}
+
+.profile-image {
+    overflow: hidden;
+    margin: 30px 30px 10px 30px;
+}
+
+.about {
+/*    padding: 10px 0px 15px 70px;*/
+    text-align: justify;
+    margin-top: 8%;
+}
+
+.hr-style {
+    border-color: rgb(190,190,190);
+    padding: 0px;
+}
+
+.publication {
+    padding: 0px 15px 0px 15px;
+    /*margin-left: 1%;*/
+}
+
+.publication-image {
+    background-color: white;
+    overflow: hidden;
+}
+
+.publication-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px 0px 0px 70px;
+}
+
+.publication-title {
+    font-size: 1.5em;
+    font: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.publication-icon {
+    display: inline-block;
+    height: 25px;
+    padding-bottom: 10px;
+}
+
+.publication-bibtex {
+    background-color: rgb(238,238,238);
+    font-size: 80%;
+    white-space: pre-wrap;
+}
+
+.teaching {
+    padding-bottom: 10px;
+}

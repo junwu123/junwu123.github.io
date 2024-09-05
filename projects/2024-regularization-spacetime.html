@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .fileSize {
+            margin-top: 3px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body alink="#4c80b2" link="#000064" text="#404040" vlink="#000064">
+    <br>
+    <br>
+    <br>
+    <title>Regularization in space–time topology optimization for additive manufacturing</title>
+
+
+    <div style="width:800px; margin: 0 auto; text-align: justify;">
+        <div style="text-align: center;">
+            <h1>
+                Regularization in space–time topology optimization for additive manufacturing
+            </h1>
+            <h3>Computer Methods in Applied Mechanics and Engineering, 2024</h3>
+            <center>
+                <table width="800px">
+                    <tbody>
+                        <tr align="center">
+                            <td width="22%">Weiming Wang</td>
+                            <td width="22%">Kai Wu</td>
+                            <td width="22%">Fred van Keulen</td>
+                            <td width="20%"><a href="http://www.jun-wu.net">Jun Wu</a></td>
+                        </tr>
+                        <tr align="center">
+                            <td>TU Delft</td>
+                            <td>TU Delft</td>
+                            <td>TU Delft</td>
+                            <td>TU Delft</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+
+            <br \="">
+            <br \="">
+            <img src="../data/image/regularization-spacetime.png" width="800" border="0">
+            <p></p>
+        </div>
+
+        <h2>Abstract</h2>
+In additive manufacturing, the fabrication sequence has a large influence on the quality of manufactured components. While planning of the fabrication sequence is typically performed after the component has been designed, recent developments have demonstrated the possibility and benefits of simultaneous optimization of both the structural layout and the corresponding fabrication sequence. This is particularly relevant in multi-axis additive manufacturing, where rotational motion offers enhanced flexibility compared to planar fabrication. The simultaneous optimization approach, called space–time topology optimization, introduces a pseudo-time field to encode the manufacturing process order, alongside a pseudo-density field representing the structural layout. To comply with manufacturing principles, the pseudo-time field needs to be monotonic, i.e., free of local minima. However, explicitly formulated constraints proposed in prior work are not always effective, particularly for complex structural layouts that commonly result from topology optimization.
+        
+In this paper, we introduce a novel method to regularize the pseudo-time field in space–time topology optimization. We conceptualize the monotonic additive manufacturing process as a virtual heat conduction process starting from the surface upon which a component is constructed layer by layer. The virtual temperature field, which shall not be confused with the actual temperature field during manufacturing, serves as an analogy for encoding the fabrication sequence. In this new formulation, we use local virtual heat conductivity coefficients as optimization variables to steer the temperature field and, consequently, the fabrication sequence. The virtual temperature field is inherently free of local minima due to the physics it resembles. We numerically validate the effectiveness of this regularization in space–time topology optimization under process-dependent loads, including gravity and thermomechanical loads.
+        <h2>Keywords</h2>
+Space–time topology optimization; Fabrication sequence optimization; Multi-axis additive manufacturing; Heat equations
+
+        <h2>Download</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td align="right"><a href="https://www.dropbox.com/scl/fi/1jnswo4ykhag8oyc5irm3/CMAME2024_Regularization_in_space-time_topology_optimization_for_additive_manufacturing.pdf?rlkey=zs8jik4zproo7xhzc93412kbu&dl=0" target="_blank"><img src="../data/teaser/pdf.png"></a></td>
+                    <td width="120" align="left"><a href="https://www.dropbox.com/scl/fi/1jnswo4ykhag8oyc5irm3/CMAME2024_Regularization_in_space-time_topology_optimization_for_additive_manufacturing.pdf?rlkey=zs8jik4zproo7xhzc93412kbu&dl=0" target="_blank">Paper</a><p class="fileSize">4.3 MB</p></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Bibtex</h2>
+        <pre>@article{Wang2024CMAME-regularization,
+    title={Regularization in Space-Time Topology Optimization for Additive Manufacturing},
+    author={Weiming Wang and Kai Wu and Fred van Keulen and Jun Wu},
+    journal={Computer Methods in Applied Mechanics and Engineering},
+    volume={431},
+    pages={117202},
+    year={2024},
+    doi={https://doi.org/10.1016/j.cma.2024.117202}, 
+    publisher={Elsevier}
+}
+</pre>
+    </div>
+</body>
+</html>

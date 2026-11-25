@@ -1,159 +1,110 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Jun Wu @ TU Delft</title>
-    <style type="text/css">
-        body {
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-left: 100px;
-            margin-right: 100px;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jun Wu, Associate Professor at Delft University of Technology. Research in computational design, digital fabrication, and topology optimization.">
+<title>Jun Wu | TU Delft</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #202124;
+  --link: #4285f4;
+  --content-link: #990000;
+}
 
-        p {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 30px 100px;
+  background: #fff;
+  color: #000;
+  font: 16px Helvetica, Arial, sans-serif;
+}
+.site-shell { width: auto; margin: 0; padding: 0; }
+p { margin: 0; }
+a { color: var(--link); text-decoration: none; }
+a:visited { color: var(--link); }
+a:hover, a:active { color: #0000ff; }
+a:focus-visible { outline: 3px solid #f2bd45; outline-offset: 3px; }
+.content {
+  color: #000;
+  font: lighter 16px Helvetica, Arial, sans-serif;
+}
+.content a { color: var(--content-link); }
+.caption {
+  margin: 0;
+  color: #000;
+  font: normal 34px Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+.caption-1, .caption-2, .caption-3, .PaperTitle, .PaperVenue,
+.highlight, .title-small, .title-large { font-family: Helvetica, Arial, sans-serif; }
+.caption-1, .caption-2, .caption-3, .PaperTitle, .PaperVenue,
+.highlight, .content { font-size: 16px; }
+.caption-2 { color: #990000; font-weight: bold; }
+.caption-3, .highlight { color: #db4437; font-weight: bold; }
+.PaperTitle { font-weight: normal; }
+.PaperVenue { font-style: italic; font-weight: lighter; }
+.title-large {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+}
+.title-small {
+  margin: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: normal;
+}
+.margin { font-size: 10px; line-height: 10px; }
+.margin-small { font-size: 5px; line-height: 5px; }
+.margin-large { font-size: 16px; line-height: 16px; }
+table { width: auto; max-width: 100%; border: 0; border-collapse: collapse; }
+table:has(.PaperTitle) + table:has(.PaperTitle) { margin-top: .5em; }
+td { padding: 0; vertical-align: top; }
+td img { display: block; max-width: 100%; height: auto; }
+ul { margin: .35rem 0 1rem; padding-left: 1.4rem; }
+li { margin: .25rem 0; }
 
-        .caption {
-            font-size: 34px;
-            font-weight: normal;
-            color: #000;
-            font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-        }
-
-        .caption-1 {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-        }
-
-        .caption-2 {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: bold;
-            color: #990000;
-        }
-
-        .caption-3 {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: bold;
-            color: #F00;
-        }
-
-        .PaperTitle {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: normal;
-        }
-
-        .PaperVenue {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 300;
-            font-style: italic;
-        }
-        .content {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 300;
-        }
-
-            .content a {
-                font-size: 16px;
-                font-family: Helvetica, Arial, sans-serif;
-                font-weight: 300;
-                color: #990000;
-            }
-
-            .content strong a {
-                font-size: 16px;
-                font-family: Helvetica, Arial, sans-serif;
-                font-weight: 300;
-                color: #990000;
-            }
-
-        .highlight {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: normal;
-            color: #DB4437;
-        }
-
-        .title-small {
-            font-size: 18px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: normal;
-            color: #000;
-        }
-
-        .title-large {
-            font-size: 20px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: normal;
-            color: #000;
-        }
-
-        .margin {
-            font-size: 10px;
-            line-height: 10px;
-        }
-
-        .margin-small {
-            font-size: 5px;
-            line-height: 5px;
-        }
-
-        .margin-large {
-            font-size: 16px;
-            line-height: 16px;
-        }
-
-        a:link {
-            color: #4285F4;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: #4285F4;
-            text-decoration: none;
-        }
-
-        content a:link {
-            text-decoration: none;
-        }
-
-        content a:visited {
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #0000FF;
-            text-decoration: none;
-        }
-
-        a:active {
-            color: #0000FF;
-            text-decoration: none;
-        }
-
-        strong a:active {
-            color: #0000FF;
-            text-decoration: underline;
-        }
-    </style>
-    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+@media (max-width: 900px) {
+  body { margin: 24px 5vw; }
+  table { max-width: 100%; }
+}
+@media (max-width: 680px) {
+  body { margin: 16px; }
+  .site-shell { width: auto; }
+  table, tbody, tr, td { display: block; width: 100% !important; }
+  tr { margin: 0 0 1rem; }
+  td { padding: .15rem 0; }
+  td:empty { display: none; }
+  body > main > table:first-of-type tr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    align-items: center;
+  }
+  body > main > table:first-of-type tr > td:first-child {
+    flex: 0 0 9rem;
+    width: 9rem !important;
+  }
+  body > main > table:first-of-type tr > td:first-child img { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
 </head>
-
-
 <body>
-    <table border="0">
+<main class="site-shell">
+    <table role="presentation" border="0">
         <tbody>
 
             <tr>
-                <td width="185"><img src="./data/image/wu.jpg" border="0" height="240" /></td>
+                <td width="185"><img alt="Portrait of Jun Wu" src="./data/image/wu.jpg" border="0" height="240" /></td>
                 <td width="15"></td>
                 <td>
-                    <table border="0">
+                    <table role="presentation" border="0">
                         <tbody>
                             <tr height="10">
                                 <td colspan="2"></td>
@@ -161,7 +112,7 @@
 
                             <tr height="20">
                                 <td>
-                                    <p class="caption">Jun Wu</p>
+                                    <h1 class="caption">Jun Wu</h1>
                                     <p class="content">Associate Professor</p>
                                     <p class="content">Department of Sustainable Design Engineering</p>
                                     <p class="content">Delft University of Technology</p>
@@ -171,7 +122,7 @@
 
                             <tr height="40">
                                 <td>
-                                    <table border="0">
+                                    <table role="presentation" border="0">
                                         <tbody>
                                             <tr height="20">
                                                 <td width="55">
@@ -179,7 +130,7 @@
                                                     <p class="content">Email: </p>
                                                 </td>
                                                 <td>
-                                                    <p class="content"> j.wu-1@tudelft.nl</p>
+                                                <p class="content"><a href="mailto:j.wu-1@tudelft.nl">j.wu-1@tudelft.nl</a></p>
                                                 </td>
                                             </tr>
                                             <tr height="20">
@@ -227,13 +178,13 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
                 <td width="1000">
                     <p class="content">I am an associate professor at <a href="https://www.tudelft.nl/en/">TU Delft</a>, since August 2022. Before joining TU Delft in Sep. 2016, I was a HC Ørsted postdoc fellow at the Department of Mechanical Engineering, <a href="http://www.dtu.dk/english">DTU Denmark</a>. I obtained my PhD in Computer Science in 2015 from <a href="https://www.tum.de/nc/en/">TU Munich</a>, and a PhD in Mechanical Engineering in 2012 from <a href="http://ev.buaa.edu.cn/">Beihang</a> University. </p>
                     <br>
-                    <p class="content">My research is focused on <span style="font-weight:normal;">computational design</span> and digital fabrication, with an emphasis on <span style="font-weight:normal;">topology optimization</span> (which is sometimes referred to as generative design). My work received best paper awards at international conferences including the Symposium on Solid and Physical Modeling 2019, the World Congress of Structural and Multidisciplinary Optimization 2019, and the inaugural International Congress of Basic Science 2023. I received the <a href="http://solidmodeling.org/awards/sma-yia/sma-yia-2021/" , target="_blank">2021 SMA Young Investigator Award</a>, and <a href="https://www.issmo.net/haftka-award/" , target="_blank">2023 ISSMO Haftka Young Investigator Award</a>. In 2023, I was awarded a Vidi grant from the Dutch Research Council (NWO) to further develop my research on Space-time optimization for additive manufacturing. I'm on the editorial board of <a href="https://www.sciencedirect.com/journal/computer-aided-design" , target="_blank">Computer-Aided Design</a> and <a href="https://www.springer.com/journal/158" , target="_blank">Structural and Multidisciplinary Optimization</a>.</p>
+                    <p class="content">My research is focused on <span style="font-weight:normal;">computational design</span> and digital fabrication, with an emphasis on <span style="font-weight:normal;">topology optimization</span> (which is sometimes referred to as generative design). My work received best paper awards at international conferences including the Symposium on Solid and Physical Modeling 2019, the World Congress of Structural and Multidisciplinary Optimization 2019, and the inaugural International Congress of Basic Science 2023. I received the <a href="http://solidmodeling.org/awards/sma-yia/sma-yia-2021/" target="_blank" rel="noopener noreferrer">2021 SMA Young Investigator Award</a>, and <a href="https://www.issmo.net/haftka-award/" target="_blank" rel="noopener noreferrer">2023 ISSMO Haftka Young Investigator Award</a>. In 2023, I was awarded a Vidi grant from the Dutch Research Council (NWO) to further develop my research on Space-time optimization for additive manufacturing. I'm on the editorial board of <a href="https://www.sciencedirect.com/journal/computer-aided-design" target="_blank" rel="noopener noreferrer">Computer-Aided Design</a> and <a href="https://www.springer.com/journal/158" target="_blank" rel="noopener noreferrer">Structural and Multidisciplinary Optimization</a>.</p>
                     <br>
 
                     <!--
@@ -246,7 +197,7 @@
                     <p class="content">Underlying such diverse design problems is computer simulation and optimization (e.g., topology optimization) of shapes, structures, and (meta-)materials. It builds upon and extends the state-of-the-art in computer graphics, computer-aided design, and computational physics, and in particular regarding geometry and mechanics.</p>
                     -->
 
-                    <p class="content">I'm privileged to work with talented PhD students and postdocs: Stefan Lang (11.2025-), Alex Luijten (1.2025-), Manabendra Das (11.2023-), Dr. Dennis Bukenberger (TUM, 9.2023-) Dr. Vibhas Mishra (4.2023-), Wei Tong (PolyU, 1.2023-), Verindi Vekemans (11.2022-), Kai Wu (10.2020-), Junpeng Wang (TUM, 11.2018-), Eric Garner (10.2018-12.2023), Tim Kuipers (9.2017-12.2021), Xiaoya Zhai (9.2019-3.2021), Rob Scharff (1.2017-12.2020), Dr. Weiming Wang (4.2018-5.2020), Jeroen Groen (3-4.2018).</p>
+                    <p class="content">I'm privileged to work with talented PhD candidates and postdocs: Stefan Lang (11.2025-), Alex Luijten (1.2025-), Manabendra Das (11.2023-), Dr. Dennis Bukenberger (TUM, 9.2023-), Dr. Vibhas Mishra (4.2023-10.2026), Wei Tong (PolyU, 1.2023-), Verindi Vekemans (11.2022-), Kai Wu (10.2020-), Junpeng Wang (TUM, 11.2018-12.2025), Eric Garner (10.2018-12.2023), Tim Kuipers (9.2017-12.2021), Xiaoya Zhai (9.2019-3.2021), Rob Scharff (1.2017-12.2020), Dr. Weiming Wang (4.2018-5.2020), Jeroen Groen (3-4.2018).</p>
                 </td>
             </tr>
         </tbody>
@@ -254,10 +205,35 @@
 
     <br>
 
-    <p id="topopt-publication" class="title-large">News</p>
+    <h2 id="news" class="title-large">News</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
+        <tr>
+            <td width="80" style="vertical-align:top"><p class="content">2026.10</p></td>
+                <td width="920">
+                    <p class="content">
+                      Welcome to Delft, Dennis. And congratulations on the publication of two papers:
+                      one at <a href="https://scf.acm.org/2026/">SCF 2026</a> and one in ToG.
+                    </p>
+                </td>
+            </tr>
+        <tr>
+            <td width="80" style="vertical-align:top"><p class="content">2026.7</p></td>
+                <td width="920">
+                    <p class="content">
+                        In July, we travelled to Munich to attend the joint <a href="https://wccm-eccomas2026.org/" target="_blank" rel="noopener noreferrer">WCCM-ECCOMAS</a> Congress. &#x1F37A;
+                    </p>
+                </td>
+            </tr>
+        <tr>
+            <td width="80" style="vertical-align:top"><p class="content">2026.6</p></td>
+                <td width="920">
+                    <p class="content">
+                        We attended <a href="https://addidex.com/" target="_blank" rel="noopener noreferrer">Addidex</a>, a two-day event dedicated to robotic 3D printing, in Haarlem. At home in the Netherlands, it brought together open-minded people from around the world. It had a great vibe, and we’re looking forward to the next one. 
+                    </p>
+                </td>
+            </tr>
 	    <tr>
             <td width="80" style="vertical-align:top"><p class="content">2026.1</p></td>
                 <td width="920">
@@ -266,66 +242,10 @@
                     </p>
                 </td>
             </tr>
-        <tr>
-            <td width="80" style="vertical-align:top"><p class="content">2025.11</p></td>
-                <td width="920">
-                    <p class="content">
-                       The group visited Formnext in Frankfurt. It was great to see the growing popularity of robotic 3D printing, and the advances in 3D printing technology were both impressive and inspiring.
-                    </p>
-                </td>
-            </tr>
-        <tr>
-            <td width="80" style="vertical-align:top"><p class="content">2025.10</p></td>
-                <td width="920">
-                    <p class="content">
-                       In September, we attented the SIM-AM conference in the beautiful city of Pavia. It was wonderful to re-connect with old friends and meet new ones.
-                    </p>
-                </td>
-            </tr>
-        <tr>
-                <td width="80" style="vertical-align:top"><p class="content">2025.10</p></td>
-                <td width="920">
-                    <p class="content">
-                       Multiple articles were published in the past months. Congratulations to Junpeng, Manav, and Wei for the nice work!
-                    </p>
-                </td>
-            </tr>
-        <tr>
-                <td width="80" style="vertical-align:top"><p class="content">2025.6</p></td>
-                <td width="920">
-                    <p class="content">
-                       Kai Wu defended his PhD dissertation on 11th June, 2025. Congrats, Dr. Wu!
-                    </p>
-                </td>
-            </tr>
-	    <tr>
-                <td width="80" style="vertical-align:top"><p class="content">2025.5</p></td>
-                <td width="920">
-                    <p class="content">
-                       At WCSMO in Kobe, I gave a talk on "Recent Advances in Design for Additive Manufacturing". <a href="https://www.dropbox.com/scl/fi/27znfhbztg9emk8cygjtv/SOTA-WCSMO-2025.pdf?rlkey=ta2oobv67u5u7ddbg75eaf5o4&dl=0">Slides</a>
-                    </p>
-                </td>
-            </tr>
-	    <tr>
-                <td width="80" style="vertical-align:top"><p class="content">2025.3</p></td>
-                <td width="920">
-                    <p class="content">
-                        Congrats to Kai Wu and Wei Tong for recent publications, one in Computer Methods in Applied Mechanics and Engineering, and one in Structural and Multidisciplinary Optimization.
-                    </p>
-                </td>
-            </tr>
-	    <tr>
-                <td width="80" style="vertical-align:top"><p class="content">2025.3</p></td>
-                <td width="920">
-                    <p class="content">
-                        Our proposal "AM4Micro: Designing Material Microstructures Through Additive Manufacturing Sequence Planning" is accepted by Dutch Research Council (NWO). This project falls within the Dutch Research Agenda (NWA) "Materials - Made in Holland". <a href="https://www.tudelft.nl/2025/io/maart/ide-projects-receive-nwo-funding-linked-to-nwa-routes">Link</a>
-                    </p>
-                </td>
-            </tr>
             <tr>
                 <td width="80" style="vertical-align:top"><p class="content">Old news</p></td>
                 <td width="920">
-                    <p class="content"><a href="News-archive.html">2018-2024</a></p>
+                    <p class="content"><a href="News-archive.html">2018-2025</a></p>
                 </td>
             </tr>
         </tbody>
@@ -334,52 +254,41 @@
 
     <br>
 
-    <p id="topopt-publication" class="title-large">Professional Activities</p>
+    <h2 id="professional-activities" class="title-large">Professional Activities</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
                 <td width="1000">
                     <ul>
-                        <li><p class="content">Initiator, and Convener (2020.5-2025.12), <a href="http://top-webinar.org/" , target="_blank">TOP Webinar</a>, </p></li>
-                        <li><p class="content">Member of Editorial Board, <a href="https://www.journals.elsevier.com/computer-aided-design" , target="_blank">Computer-Aided Design</a> (Elsevier), 2019-present</p></li>
-                        <li><p class="content">Review Editor, <a href="https://www.springer.com/journal/158" , target="_blank">Structural and Multidisciplinary Optimization</a> (Springer), 2022-present</p></li>
-                        <p class="margin-small">&nbsp;</p>
-                        <li><p class="content">Co-organizer, IDEA League summer school <a href="https://cdfam2020.weblog.tudelft.nl/" , target="_blank">Computational Design for Additive Manufacturing</a>, 2020, 2021, 2023, 2024</p></li>
-                        <li><p class="content">Corresponding editor, <a href="https://www.journals.elsevier.com/computer-aided-design" , target="_blank">Computer-Aided Design</a>, Special issue on "<a href="https://www.sciencedirect.com/journal/computer-aided-design/special-issue/10JFQGJ1L92" , target="_blank">Advances in Generative Design"</a>, 2018-2019</p></li>
-                        <li><p class="content">Corresponding organizer, Eurographics tutorial <a href="https://topopt.weblog.tudelft.nl/" , target="_blank">Topology Optimization for Computational Fabrication</a>, 2017</p></li>
-                        <p class="margin-small">&nbsp;</p>
-                        <li><p class="content">Program Committee Member</p></li>
-                        <ul>
-                            <li><p class="content">Symposium on Solid & Physical Modeling (SPM), <a href="https://project.inria.fr/spm2019/" , target="_blank">2019</a>, <a href="https://spm2020.sciencesconf.org/" , target="_blank">2020</a>, <a href="https://www.siam.org/conferences/cm/conference/gdspm21" , target="_blank">2021</a>, <a href="https://spm2022.sciencesconf.org/" , target="_blank">2022</a>, <a href="https://sites.google.com/view/spm-2023/" , target="_blank">2023</a>, <a href="https://spmconf.github.io/SPM2024/" , target="_blank">2024</a>, <a href="https://spmconf2025.github.io/SPM2025/" , target="_blank">2025</a></p></li>
-                            <li><p class="content">Computational Visual Media Conference (CVM), <a href="http://iccvm.org/2021/" , target="_blank">2021</a>, <a href="http://iccvm.org/2022/" , target="_blank">2022</a>, <a href="http://iccvm.org/2023/" , target="_blank">2023</a>, <a href="http://iccvm.org/2024/" , target="_blank">2024</a>, <a href="http://iccvm.org/2025/" , target="_blank">2025</a> </p></li>
-                            <li><p class="content">Computer Graphics International (CGI), <a href="http://fj.ics.keio.ac.jp/cgi17/" , target="_blank">2017</a>, <a href="https://www.cgs-network.org/cgi23/", target="_blank">2023</a>, <a href="https://www.cgs-network.org/cgi25/", target="_blank">2025</a></p></li>
-                            <li><p class="content">ACM Symposium on Computational Fabrication (SCF), <a href="https://scf.acm.org/2025/", target="_blank">2025</a></p></li>
-                        </ul>
-                        <p class="margin-small">&nbsp;</p>
-                        <li><p class="content">Reviewer</p></li>
-                        <ul>
-                            <li><p class="content">CAD, SMO, CMAME, IJNME, ToG, TVCG, AM, CGF, JCISE, ToH, T-ASE, TMECH, etc</p></li>
-                            <li><p class="content">Siggraph, Siggraph Asia, ICRA, IROS, RoboSoft, IEEE Vis, etc</p></li>
-                        </ul>
+                        <li><p class="content">Initiator and Convener (2020.5–2025.12), <a href="http://top-webinar.org/" target="_blank" rel="noopener noreferrer">TOP Webinar</a></p></li>
+                        <li><p class="content">Member of Editorial Board, <a href="https://www.journals.elsevier.com/computer-aided-design" target="_blank" rel="noopener noreferrer">Computer-Aided Design</a> (Elsevier), 2019–present</p></li>
+                        <li><p class="content">Review Editor, <a href="https://www.springer.com/journal/158" target="_blank" rel="noopener noreferrer">Structural and Multidisciplinary Optimization</a> (Springer), 2022–present</p></li>
+                        <li><p class="content">Co-organizer, IDEA League summer school <a href="https://cdfam2020.weblog.tudelft.nl/" target="_blank" rel="noopener noreferrer">Computational Design for Additive Manufacturing</a>, 2020, 2021, 2023, 2024</p></li>
+                        <li><p class="content">Corresponding editor, <a href="https://www.journals.elsevier.com/computer-aided-design" target="_blank" rel="noopener noreferrer">Computer-Aided Design</a>, special issue on “<a href="https://www.sciencedirect.com/journal/computer-aided-design/special-issue/10JFQGJ1L92" target="_blank" rel="noopener noreferrer">Advances in Generative Design</a>”, 2018–2019</p></li>
+                        <li><p class="content">Corresponding organizer, Eurographics tutorial <a href="https://topopt.weblog.tudelft.nl/" target="_blank" rel="noopener noreferrer">Topology Optimization for Computational Fabrication</a>, 2017</p></li>
+                        <li><p class="content">Program Committee Member</p>
+                            <ul>
+                                <li><p class="content">Symposium on Solid &amp; Physical Modeling (SPM), <a href="https://project.inria.fr/spm2019/" target="_blank" rel="noopener noreferrer">2019</a>, <a href="https://spm2020.sciencesconf.org/" target="_blank" rel="noopener noreferrer">2020</a>, <a href="https://www.siam.org/conferences/cm/conference/gdspm21" target="_blank" rel="noopener noreferrer">2021</a>, <a href="https://spm2022.sciencesconf.org/" target="_blank" rel="noopener noreferrer">2022</a>, <a href="https://sites.google.com/view/spm-2023/" target="_blank" rel="noopener noreferrer">2023</a>, <a href="https://spmconf.github.io/SPM2024/" target="_blank" rel="noopener noreferrer">2024</a>, <a href="https://spmconf2025.github.io/SPM2025/" target="_blank" rel="noopener noreferrer">2025</a></p></li>
+                                <li><p class="content">Computational Visual Media Conference (CVM), <a href="http://iccvm.org/2021/" target="_blank" rel="noopener noreferrer">2021</a>, <a href="http://iccvm.org/2022/" target="_blank" rel="noopener noreferrer">2022</a>, <a href="http://iccvm.org/2023/" target="_blank" rel="noopener noreferrer">2023</a>, <a href="http://iccvm.org/2024/" target="_blank" rel="noopener noreferrer">2024</a>, <a href="http://iccvm.org/2025/" target="_blank" rel="noopener noreferrer">2025</a></p></li>
+                                <li><p class="content">Computer Graphics International (CGI), <a href="http://fj.ics.keio.ac.jp/cgi17/" target="_blank" rel="noopener noreferrer">2017</a>, <a href="https://www.cgs-network.org/cgi23/" target="_blank" rel="noopener noreferrer">2023</a>, <a href="https://www.cgs-network.org/cgi25/" target="_blank" rel="noopener noreferrer">2025</a></p></li>
+                                <li><p class="content">ACM Symposium on Computational Fabrication (SCF), <a href="https://scf.acm.org/2025/" target="_blank" rel="noopener noreferrer">2025</a></p></li>
+                            </ul>
+                        </li>
                         <!--
-                        <ul>
-                            <li><p class="content">Computer-Aided Design</p></li>
-                            <li><p class="content">Structural and Multi-disciplinary Optimization</p></li>
-                            <li><p class="content">Computer Methods in Applied Mechanics and Engineering</p></li>
-                            <li><p class="content">ACM Trans. on Graphics</p></li>
-                            <li><p class="content">IEEE Trans. on Visualization and Computer Graphics</p></li>
-                            <li><p class="content">ASME Journal of Computing and Information Science in Engineering</p></li>
-                        </ul>
-                        -->
-                        <p class="margin-small">&nbsp;</p>
-                        <li><p class="content">Invited talks</p></li>
-                        <ul>
-                            <li><p class="content">Academia: WCSMO 2025, Twilight 2024, Sim-AM 2019, IUTAM Symposium 2018</p></li>
-                            <li><p class="content">Graduate school: GAMM Juniors' Summer School <a href="https://www.applied.math.tugraz.at/tagungen/samm21/" , target="_blank">2021</a>, SGP Graduate School <a href="https://sgp2019.di.unimi.it/graduate_school.html" , target="_blank">2019</a>, USTC Summer School <a href="http://staff.ustc.edu.cn/~lgliu/Courses/SummerSchool_2018/index.html" , target="_blank">2018</a></p></li>
-                            <li><p class="content">Industry/public: SIEMENS ARC 2024, 4D Printing and Meta Materials 2019, Dutch Design Week 2017, NWO Bessensap 2017</p></li>
-                        </ul>
-                        <!--
+                        <li><p class="content">Reviewer</p>
+                            <ul>
+                                <li><p class="content">CAD, SMO, CMAME, IJNME, ToG, TVCG, AM, CGF, JCISE, ToH, T-ASE, TMECH, etc.</p></li>
+                                <li><p class="content">SIGGRAPH, SIGGRAPH Asia, ICRA, IROS, RoboSoft, IEEE VIS, etc.</p></li>
+                            </ul>
+                        </li>
+                        <li><p class="content">Invited talks</p>
+                            <ul>
+                                <li><p class="content">Academia: WCSMO 2025, Twilight 2024, Sim-AM 2019, IUTAM Symposium 2018</p></li>
+                                <li><p class="content">Graduate school: GAMM Juniors' Summer School <a href="https://www.applied.math.tugraz.at/tagungen/samm21/" target="_blank" rel="noopener noreferrer">2021</a>, SGP Graduate School <a href="https://sgp2019.di.unimi.it/graduate_school.html" target="_blank" rel="noopener noreferrer">2019</a>, USTC Summer School <a href="http://staff.ustc.edu.cn/~lgliu/Courses/SummerSchool_2018/index.html" target="_blank" rel="noopener noreferrer">2018</a></p></li>
+                                <li><p class="content">Industry/public: SIEMENS ARC 2024, 4D Printing and Meta Materials 2019, Dutch Design Week 2017, NWO Bessensap 2017</p></li>
+                            </ul>
+                        </li>
                          <ul>
                              <li><p class="content">Simulation for Additive Manufacturing, Sim-AM 2019 (Pavia, Italy), Keynote: Integrated Optimization of Structure and Fabrication Process</p></li>
                              <li><p class="content">SGP Graduate School on Geometry Processing 2019 (Milan, Italy), "Topology Optimization for Fabrication"</p></li>
@@ -399,16 +308,16 @@
     <br>
 
 
-    <p id="topopt-publication" class="title-large">Publications</p>
+    <h2 id="publications" class="title-large">Publications</h2>
 
     <br>
-    <p id="pub2019" class="title-small">2026</p>
+    <h3 id="2026" class="title-small">2026</h3>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/MultiPlanar.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/MultiPlanar.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Differentiable Modelling and Optimization of Multi-Planar Slicing for Multi-Axis Additive Manufacturing</p>
@@ -416,7 +325,45 @@
                 <p class="PaperVenue">Structural and Multidisciplinary Optimization, 2026</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="" , target="_blank">Paper</a>
+                    <a href="https://doi.org/10.1007/s00158-025-04240-3" target="_blank" rel="noopener noreferrer">Paper</a>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table role="presentation" border="0">
+        <tbody>
+        <tr>
+            <td width="140"><img alt="Stress-driven anisotropic Voronoi infill structures" src="./data/teaser/voronoiStructures.png" border="0" width="210" /></td>
+            <td width="20"></td>
+            <td valign="middle" width="770">
+                <p class="PaperTitle">Stress-Driven Anisotropic Voronoi Structures</p>
+                <p class="content">Dennis R. Bukenberger, Jun Wu, and Rüdiger Westermann</p>
+                <p class="PaperVenue">ACM Transactions on Graphics (ACM TOG), 2026</p>
+                <p class="content">
+                    <a href="https://doi.org/10.1145/3864020" target="_blank" rel="noopener noreferrer">Paper</a> |
+                    <a href="https://www.bukenberger.net/pdfs/2026_bukenberger_stress-driven_anisogropic_voronoi_structures.pdf" target="_blank" rel="noopener noreferrer">PDF</a> |
+                    <a href="https://github.com/dbukenberger/VoronoiStructures" target="_blank" rel="noopener noreferrer">Code</a>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table role="presentation" border="0">
+        <tbody>
+        <tr>
+            <td width="140"><img alt="Stress-scaled sheet structure infill designs" src="./data/teaser/speedySheets.png" border="0" width="210" /></td>
+            <td width="20"></td>
+            <td valign="middle" width="770">
+                <p class="PaperTitle">Speedy Stress-Scaled Sheet Structure Synthesis</p>
+                <p class="content">Dennis R. Bukenberger, Jun Wu, and Rüdiger Westermann</p>
+                <p class="PaperVenue">ACM Symposium on Computational Fabrication (SCF), 2026</p>
+                <p class="content">
+                    <a href="https://doi.org/10.1145/3828611.3845636" target="_blank" rel="noopener noreferrer">Paper</a> |
+                    <a href="https://www.bukenberger.net/pdfs/2026_bukenberger_speedy_stress-scaled_sheet_structure_synthesis.pdf" target="_blank" rel="noopener noreferrer">PDF</a> |
+                    <a href="https://github.com/dbukenberger/SpeedySheets" target="_blank" rel="noopener noreferrer">Code</a>
                 </p>
             </td>
         </tr>
@@ -424,12 +371,12 @@
     </table>
 
     <br>
-    <p id="pub2019" class="title-small">2025</p>
+    <h3 id="2025" class="title-small">2025</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/Overheating.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/Overheating.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">A Physics-Motivated Geometric Method for Overheating Prevention in Topology Optimization for Additive Manufacturing</p>
@@ -437,7 +384,7 @@
                 <p class="PaperVenue">Computer Methods in Applied Mechanics and Engineering, 2025</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://doi.org/10.1016/j.cma.2025.118363" , target="_blank">Paper</a>
+                    <a href="https://doi.org/10.1016/j.cma.2025.118363" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
@@ -446,10 +393,10 @@
 
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/TOP3D_XL.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/TOP3D_XL.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Efficient large-scale 3D topology optimization with matrix-free MATLAB code</p>
@@ -457,7 +404,7 @@
                 <p class="PaperVenue">Structural and Multidisciplinary Optimization, 2025</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://link.springer.com/article/10.1007/s00158-025-04127-3", target="_blank">Paper</a> | <a href="https://github.com/PSLer/TOP3D_XL", target="_blank">Code</a>
+                    <a href="https://link.springer.com/article/10.1007/s00158-025-04127-3" target="_blank" rel="noopener noreferrer">Paper</a> | <a href="https://github.com/PSLer/TOP3D_XL" target="_blank" rel="noopener noreferrer">Code</a>
                 </p>
             </td>
         </tr>
@@ -465,10 +412,10 @@
     </table>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/Casting.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/Casting.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Process simulation-informed topology optimization for formwork-based concrete casting</p>
@@ -476,7 +423,7 @@
                 <p class="PaperVenue">Structural and Multidisciplinary Optimization, 2025</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://doi.org/10.1007/s00158-025-04084-x", target="_blank">Paper</a>
+                    <a href="https://doi.org/10.1007/s00158-025-04084-x" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
@@ -484,10 +431,10 @@
     </table>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/sgldBench.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/sgldBench.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">SGLDBench: A Benchmark Suite for Stress-Guided Lightweight 3D Designs</p>
@@ -495,7 +442,7 @@
                 <p class="PaperVenue">IEEE Transactions on Visualization and Computer Graphics, 2025</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://doi.org/10.1109/TVCG.2025.3573774", target="_blank">Paper</a> | <a href="https://github.com/PSLer/SGLDBench", target="_blank">Code</a> | <a href="https://www.cs.cit.tum.de/cg/research/publications/2025/sgldbench-a-benchmark-suite-for-stress-guided-lightweight-3d-designs/", target="_blank">Project</a>
+                    <a href="https://doi.org/10.1109/TVCG.2025.3573774" target="_blank" rel="noopener noreferrer">Paper</a> | <a href="https://github.com/PSLer/SGLDBench" target="_blank" rel="noopener noreferrer">Code</a> | <a href="https://www.cs.cit.tum.de/cg/research/publications/2025/sgldbench-a-benchmark-suite-for-stress-guided-lightweight-3d-designs/" target="_blank" rel="noopener noreferrer">Project</a>
                 </p>
             </td>
         </tr>
@@ -503,10 +450,10 @@
     </table>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/residualstress.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/residualstress.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Residual stress-constrained space-time topology optimization for multi-axis additive manufacturing</p>
@@ -514,7 +461,7 @@
                 <p class="PaperVenue">Computer Methods in Applied Mechanics and Engineering, 2025</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://doi.org/10.1016/j.cma.2025.117913", target="_blank">Paper</a>
+                    <a href="https://doi.org/10.1016/j.cma.2025.117913" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
@@ -522,10 +469,10 @@
     </table>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/formwork.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/formwork.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Topology Optimization to Eliminate Cavities and Internal Supports in AM-Produced Formwork for Functional Structure Fabrication</p>
@@ -533,7 +480,7 @@
                 <p class="PaperVenue">Structural and Multidisciplinary Optimization, 2025</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://doi.org/10.1007/s00158-025-04084-x", target="_blank">Paper</a>
+                    <a href="https://doi.org/10.1007/s00158-025-04002-1" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
@@ -542,12 +489,12 @@
 
 
     <br>
-    <p id="pub2019" class="title-small">2024</p>
+    <h3 id="2024" class="title-small">2024</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/hexLattice.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/hexLattice.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Stress-Aligned Hexahedral Lattice Structures</p>
@@ -555,17 +502,17 @@
                 <p class="PaperVenue">Computer Graphics Forum, 2024</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://portal.fis.tum.de/en/publications/stress-aligned-hexahedral-lattice-structures" , target="_blank">Paper</a> | <a href="https://github.com/dbukenberger/HexahedralLattice", target="_blank">Code</a>
+                    <a href="https://portal.fis.tum.de/en/publications/stress-aligned-hexahedral-lattice-structures" target="_blank" rel="noopener noreferrer">Paper</a> | <a href="https://github.com/dbukenberger/HexahedralLattice" target="_blank" rel="noopener noreferrer">Code</a>
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/anisotropy.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/anisotropy.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Space-time Topology Optimization for Anisotropic Materials in Wire and Arc Additive Manufacturing</p>
@@ -573,17 +520,17 @@
                 <p class="PaperVenue">International Journal of Mechanical Sciences, 2024</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://doi.org/10.1016/j.ijmecsci.2024.109712", target="_blank">Paper</a>
+                    <a href="https://doi.org/10.1016/j.ijmecsci.2024.109712" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/Heat_regularization.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/Heat_regularization.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Regularization in Space-Time Topology Optimization for Additive Manufacturing</p>
@@ -591,18 +538,18 @@
                 <p class="PaperVenue">Computer Methods in Applied Mechanics and Engineering, 2024</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://arxiv.org/abs/2404.13059" , target="_blank">arXiv</a> | 
-                    <a href="./projects/2024-regularization-spacetime.html" , target="_blank">Project</a>                    
+                    <a href="https://arxiv.org/abs/2404.13059" target="_blank" rel="noopener noreferrer">arXiv</a> | 
+                    <a href="./projects/2024-regularization-spacetime.html" target="_blank" rel="noopener noreferrer">Project</a>                    
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/multiload.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/multiload.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Design and Optimization of Functionally-graded Triangular Lattices for Multiple Loading Conditions</p>
@@ -610,18 +557,18 @@
                 <p class="PaperVenue">Computer Methods in Applied Mechanics and Engineering, 2024</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://arxiv.org/abs/2402.15458" , target="_blank">arXiv</a> | 
-                    <a href="./projects/2024-de-homogenization-multiloads.html" , target="_blank">Project</a>      
+                    <a href="https://arxiv.org/abs/2402.15458" target="_blank" rel="noopener noreferrer">arXiv</a> | 
+                    <a href="./projects/2024-de-homogenization-multiloads.html" target="_blank" rel="noopener noreferrer">Project</a>      
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/acetabular_components.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/acetabular_components.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Automated design of bone-preserving, insertable, and shape-matching patient-specific acetabular components</p>
@@ -629,17 +576,17 @@
                 <p class="PaperVenue"> Journal of Orthopaedic Research, 2024</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://www.dropbox.com/scl/fi/ccrjb2l20m7cm542ffnjm/JOR2024_implant.pdf?rlkey=7p2orx9qpjdbm6umiittovn77&dl=0" , target="_blank">Paper</a>
+                    <a href="https://www.dropbox.com/scl/fi/ccrjb2l20m7cm542ffnjm/JOR2024_implant.pdf?rlkey=7p2orx9qpjdbm6umiittovn77&dl=0" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/diff-microstructures.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/diff-microstructures.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Topology Optimization of Differentiable Microstructures</p>
@@ -647,9 +594,9 @@
                 <p class="PaperVenue">Computer Methods in Applied Mechanics and Engineering, 2024</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://www.dropbox.com/scl/fi/8cjqdnxc5sg5ugy5zff7c/CMAME2023_DifferentiableMicrostructures.pdf?rlkey=qw4bclszh3qf6duomh9tomol9&dl=0" , target="_blank">Paper</a> 
+                    <a href="https://www.dropbox.com/scl/fi/8cjqdnxc5sg5ugy5zff7c/CMAME2023_DifferentiableMicrostructures.pdf?rlkey=qw4bclszh3qf6duomh9tomol9&dl=0" target="_blank" rel="noopener noreferrer">Paper</a> 
                     | 
-                    <a href="./projects/2024-diff-micro.html" , target="_blank">Project</a>    
+                    <a href="./projects/2024-diff-micro.html" target="_blank" rel="noopener noreferrer">Project</a>    
                 </p>
             </td>
         </tr>
@@ -658,12 +605,12 @@
 
 
     <br>
-    <p id="pub2019" class="title-small">2023</p>
+    <h3 id="2023" class="title-small">2023</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/insertability.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/insertability.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle"> An Insertability Constraint for Shape Optimization</p>
@@ -671,35 +618,35 @@
 		<p class="PaperVenue">Structural and Multidisciplinary Optimization, 2023</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://www.dropbox.com/scl/fi/zh02arya3o7y398g80t8z/SMO2023_Insertability.pdf?rlkey=5hkveme8wbrtvpo7yaisxzyjz&dl=0" , target="_blank">Paper</a>
+                    <a href="https://www.dropbox.com/scl/fi/zh02arya3o7y398g80t8z/SMO2023_Insertability.pdf?rlkey=5hkveme8wbrtvpo7yaisxzyjz&dl=0" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/Bike.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/Bike.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
-                <p class="PaperTitle"> Advancing Design for Additive Manufacturing Education: A Focus on Computational Skills and Competencies</p>
+                <p class="PaperTitle">Advancing Design for Additive Manufacturing Education: A Focus on Computational Skills and Competencies</p>
                 <p class="content">Serena Graziosi, Jun Wu, Zjenja Doubrovski, Nicholas Meisel, Martin Schütz, and Tino Stankovic</p>
                 <p class="PaperVenue">ETH Learning and Teaching Journal, 2023</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://orcid.org/0000-0002-9932-8369" , target="_blank">Paper</a>
+                    <a href="https://doi.org/10.16906/lt-eth.v4i1.220" target="_blank" rel="noopener noreferrer">Paper</a>
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/distortion.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/distortion.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">Fabrication Sequence Optimization for Minimizing Distortion in Multi-Axis Additive Manufacturing</p>
@@ -707,19 +654,19 @@
                 <p class="PaperVenue">Computer Methods in Applied Mechanics and Engineering, 2023</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://arxiv.org/abs/2212.13307" , target="_blank">arXiv</a> | 
-                    <a href="https://www.dropbox.com/s/9wp7j7vy6a7yc8w/CMAME2023_Fabrication_Sequence_Optimization_for_Distortion_Minimization.pdf?dl=0" , target="_blank">Paper</a> |
-                    <a href="./projects/2023-distortion-minimization.html" , target="_blank">Project</a>
+                    <a href="https://arxiv.org/abs/2212.13307" target="_blank" rel="noopener noreferrer">arXiv</a> | 
+                    <a href="https://www.dropbox.com/s/9wp7j7vy6a7yc8w/CMAME2023_Fabrication_Sequence_Optimization_for_Distortion_Minimization.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                    <a href="./projects/2023-distortion-minimization.html" target="_blank" rel="noopener noreferrer">Project</a>
                 </p>
             </td>
         </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
         <tr>
-            <td width="140"><a href=""><img src="./data/teaser/de-homo.png" border="0" width="210" /></a></td>
+            <td width="140"><img alt="" src="./data/teaser/de-homo.png" border="0" width="210" /></td>
             <td width="20"></td>
             <td valign="middle" width="770">
                 <p class="PaperTitle">A Streamline-guided De-Homogenization Approach for Structural Design</p>
@@ -727,8 +674,8 @@
                 <p class="PaperVenue">ASME Journal of Mechanical Design, 2023</p>
                 <p class="margin-small">&nbsp;</p>
                 <p class="content">
-                    <a href="https://arxiv.org/abs/2207.09172" , target="_blank">arXiv</a> |
-                    <a href="https://www.cs.cit.tum.de/cg/research/publications/2022/a-streamline-guided-de-homogenization-approach-for-structural-design/" , target="_blank">Project</a>
+                    <a href="https://arxiv.org/abs/2207.09172" target="_blank" rel="noopener noreferrer">arXiv</a> |
+                    <a href="https://www.cs.cit.tum.de/cg/research/publications/2022/a-streamline-guided-de-homogenization-approach-for-structural-design/" target="_blank" rel="noopener noreferrer">Project</a>
                 </p>
             </td>
         </tr>
@@ -736,13 +683,13 @@
     </table>
 
     <br>
-    <p id="pub2019" class="title-small">2022</p>
+    <h3 id="2022" class="title-small">2022</h3>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/TEXalive.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/TEXalive.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">
@@ -752,18 +699,18 @@
                     <p class="PaperVenue">DIS '22: Designing Interactive Systems Conference</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/6ivwowk0lymyng6/TEX%28alive%292022.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="https://youtu.be/3nOCGCpew0g" , target="_blank">YouTube</a>
+                        <a href="https://www.dropbox.com/s/6ivwowk0lymyng6/TEX%28alive%292022.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://youtu.be/3nOCGCpew0g" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/fish.jpg" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/fish.jpg" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">OpenFish: Biomimetic Design of a Soft Robotic Fish for High Speed Locomotion</p>
@@ -771,17 +718,17 @@
                     <p class="PaperVenue">HardwareX, 2022</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/96olax676w1zuv4/OpenFish2022.pdf?dl=0" , target="_blank">Paper</a>
+                        <a href="https://www.dropbox.com/s/96olax676w1zuv4/OpenFish2022.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/microImplant.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/microImplant.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Multi-objective design optimization of 3D micro-architected implants</p>
@@ -789,18 +736,18 @@
                     <p class="PaperVenue">Computer Methods in Applied Mechanics and Engineering, 2022</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/lxai8z95abw6e4o/CMAME2022_Multi-objective%20design%20optimization%20of%203D%20micro-architected%20implants.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="./projects/2022-3D-Microarchitected-Implant.html" , target="_blank">Project</a>
+                        <a href="https://www.dropbox.com/s/lxai8z95abw6e4o/CMAME2022_Multi-objective%20design%20optimization%20of%203D%20micro-architected%20implants.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="./projects/2022-3D-Microarchitected-Implant.html" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/stresslines.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/stresslines.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Stress trajectory guided structural design and topology optimization</p>
@@ -808,18 +755,18 @@
                     <p class="PaperVenue">ASME IDETC-CIE: 42nd Computers and Information in Engineering Conference (CIE), 2022</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/34740ndacbmeswj/CIE2022-Stress%20trajectory%20guided%20structural%20design%20and%20topology%20optimization.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="https://www.cs.cit.tum.de/cg/research/publications/2022/stress-trajectory-guided-structural-design-and-topology-optimization/" , target="_blank">Project</a>
+                        <a href="https://www.dropbox.com/s/34740ndacbmeswj/CIE2022-Stress%20trajectory%20guided%20structural%20design%20and%20topology%20optimization.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://www.cs.cit.tum.de/cg/research/publications/2022/stress-trajectory-guided-structural-design-and-topology-optimization/" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/unityChair.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/unityChair.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Towards intentional aesthetics within topology optimization by applying the principle of unity-in-variety</p>
@@ -827,18 +774,18 @@
                     <p class="PaperVenue">Structural and Multidisciplinary Optimization, 2022</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/ci09987v97d7pym/SMO2022_Aesthetics_Unity-in-Variety.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="./projects/2022-Unity-in-Variety.html" , target="_blank">Project</a>
+                        <a href="https://www.dropbox.com/s/ci09987v97d7pym/SMO2022_Aesthetics_Unity-in-Variety.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="./projects/2022-Unity-in-Variety.html" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/3DStressTensor.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/3DStressTensor.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">3D-TSV: The 3D Trajectory-based Stress Visualizer</p>
@@ -846,9 +793,9 @@
                     <p class="PaperVenue">Advances in Engineering Software, 2022</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://arxiv.org/abs/2112.09202" , target="_blank">arXiv</a>  |
-                        <a href="https://www.cs.cit.tum.de/cg/research/publications/2022/3d-tsv-the-3d-trajectory-based-stress-visualizer/" , target="_blank">Project</a> |
-                        <a href="https://github.com/Junpeng-Wang-TUM/3D-TSV" , target="_blank">code</a>
+                        <a href="https://arxiv.org/abs/2112.09202" target="_blank" rel="noopener noreferrer">arXiv</a>  |
+                        <a href="https://www.cs.cit.tum.de/cg/research/publications/2022/3d-tsv-the-3d-trajectory-based-stress-visualizer/" target="_blank" rel="noopener noreferrer">Project</a> |
+                        <a href="https://github.com/Junpeng-Wang-TUM/3D-TSV" target="_blank" rel="noopener noreferrer">code</a>
                     </p>
                     <p class="content">
                     </p>
@@ -857,10 +804,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/stressVis.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/stressVis.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Stress Topology Analysis for Porous Infill Optimization</p>
@@ -868,10 +815,10 @@
                     <p class="PaperVenue">Structural and Multidisciplinary Optimization, 2022</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/13eha4zfy5czmeh/SMO2022_StressTopology.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="https://arxiv.org/abs/2108.09675" , target="_blank">arXiv</a> |
-                        <a href="https://www.cs.cit.tum.de/cg/research/publications/2021/stress-topology-analysis-for-porous-infill-optimization/" , target="_blank">Project</a> |
-                        <a href="https://github.com/Junpeng-Wang-TUM/Infill_plus" , target="_blank">code</a>
+                        <a href="https://www.dropbox.com/s/13eha4zfy5czmeh/SMO2022_StressTopology.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://arxiv.org/abs/2108.09675" target="_blank" rel="noopener noreferrer">arXiv</a> |
+                        <a href="https://www.cs.cit.tum.de/cg/research/publications/2021/stress-topology-analysis-for-porous-infill-optimization/" target="_blank" rel="noopener noreferrer">Project</a> |
+                        <a href="https://github.com/Junpeng-Wang-TUM/Infill_plus" target="_blank" rel="noopener noreferrer">code</a>
                     </p>
                     <p class="content">
                     </p>
@@ -880,10 +827,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/ITIL.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/ITIL.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">ITIL: Interlaced Topologically Interlocking Lattice for continuous dual-material extrusion</p>
@@ -891,8 +838,8 @@
                     <p class="PaperVenue">Additive Manufacturing, 2022</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/g42n7vmnz3oj8r4/AM2021_ITIL.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="./projects/2021-ITIL.html" , target="_blank">Project</a>
+                        <a href="https://www.dropbox.com/s/g42n7vmnz3oj8r4/AM2021_ITIL.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="./projects/2021-ITIL.html" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                     <p class="content">
                     </p>
@@ -902,12 +849,12 @@
     </table>
 
     <br>
-    <p id="pub2019" class="title-small">2021</p>
+    <h3 id="2021" class="title-small">2021</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/multiscale.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/multiscale.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Topology Optimization of Multi-scale Structures: A Review	</p>
@@ -916,18 +863,18 @@
                     <p class="highlight">ESI Highly Cited Paper</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/0cxiyijgwhuiuza/Multiscale_review.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="./projects/2021-multiscale-review.html" , target="_blank">Project</a>
+                        <a href="https://www.dropbox.com/s/0cxiyijgwhuiuza/Multiscale_review.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="./projects/2021-multiscale-review.html" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/3dsensing.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/3dsensing.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Sensing and Reconstruction of 3D Deformation on Pneumatic Soft Robots</p>
@@ -936,19 +883,19 @@
                     <p class="PaperVenue">IEEE/ASME Int. Conf. on Advanced Intelligent Mechatronics 2021</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/x0n88ufcg976l3f/TMech2021_3DSensing.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="https://arxiv.org/abs/2012.12411" , target="_blank">arXiv</a> |
-                        <a href="./projects/2021-3DSensing.html" , target="_blank">Project</a>
+                        <a href="https://www.dropbox.com/s/x0n88ufcg976l3f/TMech2021_3DSensing.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://arxiv.org/abs/2012.12411" target="_blank" rel="noopener noreferrer">arXiv</a> |
+                        <a href="./projects/2021-3DSensing.html" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/stress.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/stress.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Alternating Optimization of Design and Stress for Stress-Constrained Topology Optimization</p>
@@ -956,18 +903,18 @@
                     <p class="PaperVenue">Structural and Multidisciplinary Optimization, 2021</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/q6ht8ot4egr98ve/SMO2021_StressTO.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="./projects/2021-stressTO.html" , target="_blank">Project</a>
+                        <a href="https://www.dropbox.com/s/q6ht8ot4egr98ve/SMO2021_StressTO.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="./projects/2021-stressTO.html" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/roots.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/roots.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Digital Biofabrication to Realize the Potentials of Plant Roots for Product Design </p>
@@ -975,17 +922,17 @@
                     <p class="PaperVenue">Bio-Design and Manufacturing, 2021</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/mkh7kvhxi5t8gz3/BioDM_PlantRoots.pdf?dl=0" , target="_blank">Paper</a>
+                        <a href="https://www.dropbox.com/s/mkh7kvhxi5t8gz3/BioDM_PlantRoots.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/lattice.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/lattice.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Design and Optimization of Conforming Lattice Structures</p>
@@ -994,7 +941,7 @@
                     <p class="highlight">ESI Highly Cited Paper</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/97hqixjt2f3lzeh/Conforming_Lattice_Structures.pdf?dl=0" , target="_blank">Paper</a> |
+                        <a href="https://www.dropbox.com/s/97hqixjt2f3lzeh/Conforming_Lattice_Structures.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
                         <a href="./projects/2019-conforming-lattice.html">Project</a> |
                         <a href="http://arxiv.org/abs/1905.02902">arxiv (early version)</a>
                     </p>
@@ -1005,12 +952,12 @@
     </table>
 
     <br>
-    <p id="pub2019" class="title-small">2020</p>
+    <h3 id="2020" class="title-small">2020</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/fish.jpg" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/fish.jpg" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Biomimetic Design of a Soft Robotic Fish for High Speed Locomotion</p>
@@ -1018,19 +965,19 @@
                     <p class="PaperVenue">Living Machines 2020</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/jht01cl1i84v4fa/LM2020_soft_robot_fish.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="https://www.dezeen.com/2019/09/11/robotic-fish-rosander-van-den-berg-tu-delft-robotic-underwater-drone/" , target="_blank">Dezeen</a> |
-                        <a href="https://youtu.be/BXeGxpuU4YI" , target="_blank">YouTube</a>
+                        <a href="https://www.dropbox.com/s/jht01cl1i84v4fa/LM2020_soft_robot_fish.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://www.dezeen.com/2019/09/11/robotic-fish-rosander-van-den-berg-tu-delft-robotic-underwater-drone/" target="_blank" rel="noopener noreferrer">Dezeen</a> |
+                        <a href="https://youtu.be/BXeGxpuU4YI" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/adaptiveWidth.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/adaptiveWidth.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">A framework for adaptive width control of dense contour-parallel toolpaths in fused deposition modeling</p>
@@ -1038,18 +985,18 @@
                     <p class="PaperVenue">Computer-Aided Design, 2020</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/rol99ot6c8wfkvn/CAD2020_AdaptiveWidth.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="https://arxiv.org/abs/2004.13497" , target="_blank">arXiv</a>
+                        <a href="https://www.dropbox.com/s/rol99ot6c8wfkvn/CAD2020_AdaptiveWidth.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://arxiv.org/abs/2004.13497" target="_blank" rel="noopener noreferrer">arXiv</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/LatticeVis.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/LatticeVis.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">A Globally Conforming Lattice Structure for 2D Stress Tensor Visualization</p>
@@ -1058,18 +1005,18 @@
                     <p class="content">Special issue of Eurovis 2020</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://diglib.eg.org/bitstream/handle/10.1111/cgf13991/v39i3pp417-427.pdf" , target="_blank">Paper</a> |
-                        <a href="https://www.in.tum.de/cg/research/publications/2020/a-globally-conforming-lattice-structure-for-2d-stress-tensor-visualization/" , target="_blank">Project</a>
+                        <a href="https://diglib.eg.org/bitstream/handle/10.1111/cgf13991/v39i3pp417-427.pdf" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://www.in.tum.de/cg/research/publications/2020/a-globally-conforming-lattice-structure-for-2d-stress-tensor-visualization/" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/forceSensing.jpg" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/forceSensing.jpg" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Soft Robotic Module for Sensing and Controlling Contact Force</p>
@@ -1077,18 +1024,18 @@
                     <p class="PaperVenue">IEEE International Conference on Soft Robotics 2020</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/yotclhgokwod065/RoboSoft2020_ContactForce.pdf?dl=0" , target="_blank">Paper</a> |
-                        <a href="https://youtu.be/kVt9N1XT10A" , target="_blank">YouTube</a>
+                        <a href="https://www.dropbox.com/s/yotclhgokwod065/RoboSoft2020_ContactForce.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
+                        <a href="https://youtu.be/kVt9N1XT10A" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/space-time.gif" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/space-time.gif" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Space-Time Topology Optimization for Additive Manufacturing: Concurrent Optimization of Structural Layout and Fabrication Sequence</p>
@@ -1097,13 +1044,13 @@
                     <p class="highlight">ISSMO/Springer prize</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://www.dropbox.com/s/ardn5snuakxfjke/Space_Time_Topology_Optimization.pdf?dl=0" , target="_blank">Paper</a> |
+                        <a href="https://www.dropbox.com/s/ardn5snuakxfjke/Space_Time_Topology_Optimization.pdf?dl=0" target="_blank" rel="noopener noreferrer">Paper</a> |
                         <a href="./projects/2019-space-time-topology-optimization.html">Project</a>
                     </p>
                     <p class="content">
-                        Featured on <a href="https://www.tudelft.nl/en/2020/io/january/issmospringer-prize-for-weiming-wang/" target="_blank">IDE</a>,
-                        <a href="https://3dprint.com/263182/tu-delft-researchers-wins-issmo-springer-prize-for-space-time-topology-optimizationin-additive-manufacturing/" target="_blank">3DPrint.com</a>
-                        and <a href="https://3dprintingindustry.com/news/prize-winning-space-time-research-expands-design-for-additive-manufacturing-168355/" target="_blank">3DPrintingIndustry.com</a>.
+                        Featured on <a href="https://www.tudelft.nl/en/2020/io/january/issmospringer-prize-for-weiming-wang/" target="_blank" rel="noopener noreferrer">IDE</a>,
+                        <a href="https://3dprint.com/263182/tu-delft-researchers-wins-issmo-springer-prize-for-space-time-topology-optimizationin-additive-manufacturing/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
+                        and <a href="https://3dprintingindustry.com/news/prize-winning-space-time-research-expands-design-for-additive-manufacturing-168355/" target="_blank" rel="noopener noreferrer">3DPrintingIndustry.com</a>.
                     </p>
                     <br />
                 </td>
@@ -1113,12 +1060,12 @@
 
 
     <br>
-    <p id="pub2019" class="title-small">2019</p>
+    <h3 id="2019" class="title-small">2019</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/cad-special-issue.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/cad-special-issue.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Advances in Generative Design (Editorial)</p>
@@ -1135,10 +1082,10 @@
     </table>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/shapesensing.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/shapesensing.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Color-Based Proprioception of Soft Actuators Interacting with Objects</p>
@@ -1151,9 +1098,9 @@
                         <a href="https://youtu.be/zgOexw8YLQc">Video</a>
                     </p>
                     <p class="content">
-                        Featured on <a href="https://www.tudelft.nl/en/2019/io/august/colour-3d-printing-helps-robot-see-its-own-fingers/" target="_blank">IDE</a>,
-                        <a href="https://3dprint.com/250730/tu-delft-researchers-create-soft-robotics-that-respond-color-based-sensors/" target="_blank">3DPrint.com</a>
-                        and <a href="https://3dprintingindustry.com/news/tu-delft-engineers-develop-self-aware-3d-printed-soft-robots-159504/" target="_blank">3DPrintingIndustry.com</a>.
+                        Featured on <a href="https://www.tudelft.nl/en/2019/io/august/colour-3d-printing-helps-robot-see-its-own-fingers/" target="_blank" rel="noopener noreferrer">IDE</a>,
+                        <a href="https://3dprint.com/250730/tu-delft-researchers-create-soft-robotics-that-respond-color-based-sensors/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
+                        and <a href="https://3dprintingindustry.com/news/tu-delft-engineers-develop-self-aware-3d-printed-soft-robots-159504/" target="_blank" rel="noopener noreferrer">3DPrintingIndustry.com</a>.
                     </p>
                     <br />
                 </td>
@@ -1161,10 +1108,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/saddle_s.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/saddle_s.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">CrossFill: Foam Structures with Graded Density for Continuous Material Extrusion</p>
@@ -1180,8 +1127,8 @@
                         <a href="./data/image/SPM-best-paper-award.jpeg">Award</a>
                     </p>
                     <p class="content">
-                        Featured on <a href="https://www.tudelft.nl/en/2019/io/june/the-shape-of-things-to-come/" target="_blank">IDE</a>
-                        and <a href="https://3dprint.com/247151/density-graded-structure-for-extrusion-3d-printing-of-fgm/" target="_blank">3DPrint.com</a>
+                        Featured on <a href="https://www.tudelft.nl/en/2019/io/june/the-shape-of-things-to-come/" target="_blank" rel="noopener noreferrer">IDE</a>
+                        and <a href="https://3dprint.com/247151/density-graded-structure-for-extrusion-3d-printing-of-fgm/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
                     </p>
                     <br />
                 </td>
@@ -1189,10 +1136,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/Projection2.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/Projection2.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Homogenization-based Stiffness Optimization and Projection of 2D Coated Structures with Orthotropic Infill</p>
@@ -1205,7 +1152,7 @@
                         <a href="https://arxiv.org/abs/1808.04740">arxiv</a> (earlier version)
                     </p>
                     <p class="content">
-                        Featured on <a href="https://www.3ders.org/articles/20190319-dtu-and-tu-delft-researchers-develop-stress-adapted-orthotropic-infill-for-3d-printing.html" target="_blank">3Ders.org</a> and <a href="https://3dprint.com/238559/dtu-tu-delft-researchers-create-new-method-for-generating-stress-adapted-orthotropic-infill-3d-printing/" target="_blank">3DPrint.com</a>
+                        Featured on <a href="https://www.3ders.org/articles/20190319-dtu-and-tu-delft-researchers-develop-stress-adapted-orthotropic-infill-for-3d-printing.html" target="_blank" rel="noopener noreferrer">3Ders.org</a> and <a href="https://3dprint.com/238559/dtu-tu-delft-researchers-create-new-method-for-generating-stress-adapted-orthotropic-infill-3d-printing/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
                     </p>
                     <br />
                 </td>
@@ -1214,10 +1161,10 @@
     </table>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/gripper.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/gripper.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Reducing Out-of-Plane Deformation of Soft Robotic Actuators for Stable Grasping</p>
@@ -1236,10 +1183,10 @@
     </table>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/implant2.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/implant2.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Compatibility in Microstructural Optimization for Additive Manufacturing</p>
@@ -1252,7 +1199,7 @@
                         <a href="https://www.dropbox.com/s/4ff4d0otmjyp1c8/topX_Dual.m?dl=0">code</a>
                     </p>
                     <p class="content">
-                        Featured on <a href="https://www.tudelft.nl/en/2019/io/january/research-3d-print-graded-microstructures-published-in-additive-manufacturing/" target="_blank">IDE</a>, <a href="https://www.3ders.org/articles/20190123-researchers-at-tu-delft-3d-print-microstructure-gradients.html" target="_blank">3Ders.org</a> and <a href="https://3dprint.com/234196/researchers-discuss-microstructural-optimization-for-3d-printing/" target="_blank">3DPrint.com</a>
+                        Featured on <a href="https://www.tudelft.nl/en/2019/io/january/research-3d-print-graded-microstructures-published-in-additive-manufacturing/" target="_blank" rel="noopener noreferrer">IDE</a>, <a href="https://www.3ders.org/articles/20190123-researchers-at-tu-delft-3d-print-microstructure-gradients.html" target="_blank" rel="noopener noreferrer">3Ders.org</a> and <a href="https://3dprint.com/234196/researchers-discuss-microstructural-optimization-for-3d-printing/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
                     </p>
                     <br />
                 </td>
@@ -1261,12 +1208,12 @@
     </table>
 
     <br>
-    <p id="pub2018" class="title-small">2018</p>
+    <h3 id="2018" class="title-small">2018</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/SPM2018.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/SPM2018.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Continuous Optimization of Adaptive Quadtree Structures</p>
@@ -1288,10 +1235,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/CVM2018.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/CVM2018.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Generating Sparse Self-Supporting Wireframe Models for 3D Printing Using Mesh Simplification</p>
@@ -1308,10 +1255,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="" target="_blank"><img src="./data/teaser/ICRA2018.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/ICRA2018.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Color-Based Sensing of Bending Deformation on Soft Robots</p>
@@ -1328,10 +1275,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/dragon.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/dragon.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Support-Free Hollowing</p>
@@ -1348,10 +1295,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="./projects/2017-bone-infill.html"><img src="./data/teaser/TVCG2017.png" border="0" width="210" /></a></td>
+                <td width="140"><a href="./projects/2017-bone-infill.html"><img alt="" src="./data/teaser/TVCG2017.png" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Infill Optimization for Additive Manufacturing -- Approaching Bone-like Porous Structures</p>
@@ -1365,8 +1312,8 @@
                         <a href="https://www.dropbox.com/s/77bmh3lnf5qxdjs/Infill.m?dl=0">code</a>
                     </p>
                     <p class="content">
-                        Featured on <a href="https://3dprint.com/165006/3d-printed-bone-infill/" target="_blank">3DPrint.com</a>
-                        and <a href="http://www.3ders.org/articles/20170217-researchers-optimize-3d-print-infill-structures-by-mimicking-natural-bone-tissue.html" target="_blank">3ders.org</a>
+                        Featured on <a href="https://3dprint.com/165006/3d-printed-bone-infill/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
+                        and <a href="http://www.3ders.org/articles/20170217-researchers-optimize-3d-print-infill-structures-by-mimicking-natural-bone-tissue.html" target="_blank" rel="noopener noreferrer">3ders.org</a>
                     </p>
                     <br />
                 </td>
@@ -1375,12 +1322,12 @@
     </table>
 
     <br>
-    <p id="pub2017" class="title-small">2017</p>
+    <h3 id="2017" class="title-small">2017</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/cast.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/cast.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Thermal-Comfort Design of Personalized Casts</p>
@@ -1392,9 +1339,9 @@
                         <a href="https://shape.bu.edu/casts">Project</a>
                     </p>
                     <p class="content">
-                        Featured on <a href="https://www.tudelft.nl/en/2017/io/oktober/unique-thermal-comfort-design-for-3d-printed-orthopaedic-casts/" target="_blank">IDE</a>,
-                        <a href="https://3dprint.com/192877/3d-printed-cast-thermal-comfort/" target="_blank">3DPrint.com</a>
-                        and <a href="http://www.3ders.org/articles/20171101-researchers-develop-3d-printed-orthopaedic-casts-with-improved-thermal-comfort.html" target="_blank">3ders.org</a>
+                        Featured on <a href="https://www.tudelft.nl/en/2017/io/oktober/unique-thermal-comfort-design-for-3d-printed-orthopaedic-casts/" target="_blank" rel="noopener noreferrer">IDE</a>,
+                        <a href="https://3dprint.com/192877/3d-printed-cast-thermal-comfort/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
+                        and <a href="http://www.3ders.org/articles/20171101-researchers-develop-3d-printed-orthopaedic-casts-with-improved-thermal-comfort.html" target="_blank" rel="noopener noreferrer">3ders.org</a>
                     </p>
                     <br />
                 </td>
@@ -1402,10 +1349,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="./projects/2017-shell-infill.html"><img src="./data/teaser/CMAME2017.gif" border="0" width="210" /></a></td>
+                <td width="140"><a href="./projects/2017-shell-infill.html"><img alt="" src="./data/teaser/CMAME2017.gif" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Minimum Compliance Topology Optimization of Shell-Infill Composites for Additive Manufacturing</p>
@@ -1417,8 +1364,8 @@
                         <a href="./projects/2017-shell-infill.html">Project</a>
                     </p>
                     <p class="content">
-                        Featured on <a href="https://3dprint.com/185693/bone-3d-printing-infill-update/" target="_blank">3DPrint.com</a>
-                        and <a href="http://www.3ders.org/articles/20170828-new-method-for-bone-like-shell-infill-optimization-results-in-stronger-3d-printed-parts.html" target="_blank">3ders.org</a>
+                        Featured on <a href="https://3dprint.com/185693/bone-3d-printing-infill-update/" target="_blank" rel="noopener noreferrer">3DPrint.com</a>
+                        and <a href="http://www.3ders.org/articles/20170828-new-method-for-bone-like-shell-infill-optimization-results-in-stronger-3d-printed-parts.html" target="_blank" rel="noopener noreferrer">3ders.org</a>
                     </p>
                     <br />
                 </td>
@@ -1426,10 +1373,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="https://topopt.weblog.tudelft.nl/" target="_blank"><img src="./data/teaser/EG2017.jpg" border="0" width="210" /></a></td>
+                <td width="140"><a href="https://topopt.weblog.tudelft.nl/" target="_blank" rel="noopener noreferrer"><img alt="" src="./data/teaser/EG2017.jpg" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Topology Optimization for Computational Fabrication</p>
@@ -1437,7 +1384,7 @@
                     <p class="PaperVenue">Eurographics - Tutorial, 2017</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://topopt.weblog.tudelft.nl/" target="_blank">Project</a>
+                        <a href="https://topopt.weblog.tudelft.nl/" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                     <br />
                 </td>
@@ -1447,13 +1394,13 @@
 
 
     <br>
-    <p id="pub2016" class="title-small">2016</p>
+    <h3 id="2016" class="title-small">2016</h3>
 
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="./projects/2016-rhombic-infill.html"><img src="./data/teaser/CAD2016-1.png" border="0" width="210" /></a></td>
+                <td width="140"><a href="./projects/2016-rhombic-infill.html"><img alt="" src="./data/teaser/CAD2016-1.png" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Self-Supporting Rhombic Infill Structures for Additive Manufacturing</p>
@@ -1470,10 +1417,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href=""><img src="./data/teaser/SMI2016.png" border="0" width="210" /></a></td>
+                <td width="140"><img alt="" src="./data/teaser/SMI2016.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Shape Interior Modeling and Mass Property Optimization Using Ray-reps</p>
@@ -1490,10 +1437,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="./projects/2016-GPU-topopt.html"><img src="./data/teaser/TVCG2016.png" border="0" width="210" /></a></td>
+                <td width="140"><a href="./projects/2016-GPU-topopt.html"><img alt="" src="./data/teaser/TVCG2016.png" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">A System for High-Resolution Topology Optimization</p>
@@ -1512,12 +1459,12 @@
     </table>
 
     <br>
-    <p id="pub2015" class="title-small">2015 and earlier</p>
+    <h3 id="2015-and-earlier" class="title-small">2015 and earlier</h3>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="https://members.loria.fr/JDumas/publications/sfsyn/" target="_blank"><img src="./data/teaser/Siggraph2015.png" border="0" width="210" /></a></td>
+                <td width="140"><a href="https://members.loria.fr/JDumas/publications/sfsyn/" target="_blank" rel="noopener noreferrer"><img alt="" src="./data/teaser/Siggraph2015.png" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">By-Example Synthesis of Structurally Sound Patterns</p>
@@ -1525,7 +1472,7 @@
                     <p class="PaperVenue">ACM Transactions on Graphics (Proc. of SIGGRAPH), 2015</p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">
-                        <a href="https://members.loria.fr/JDumas/publications/sfsyn/" target="_blank">Project</a>
+                        <a href="https://members.loria.fr/JDumas/publications/sfsyn/" target="_blank" rel="noopener noreferrer">Project</a>
                     </p>
                     <br />
                 </td>
@@ -1533,10 +1480,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2014/physically-based-simulation-of-cuts-in-deformable-bodies-a-survey.html" target="_blank"><img src="./data/teaser/CGF2015.png" border="0" width="210" /></a></td>
+                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2014/physically-based-simulation-of-cuts-in-deformable-bodies-a-survey.html" target="_blank" rel="noopener noreferrer"><img alt="" src="./data/teaser/CGF2015.png" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">A Survey of Physically Based Simulation of Cuts in Deformable Bodies</p>
@@ -1554,10 +1501,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/projects/real-time-haptic-cutting.html" target="_blank"><img src="./data/teaser/MMVR2014.gif" border="0" width="210" /></a></td>
+                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/projects/real-time-haptic-cutting.html" target="_blank" rel="noopener noreferrer"><img alt="" src="./data/teaser/MMVR2014.gif" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Real-Time Haptic Cutting of High-Resolution Soft Tissues</p>
@@ -1575,10 +1522,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2013/collision-detection-for-composite-finite-elements.html" target="_blank"><img src="./data/teaser/CGI2013.png" border="0" width="210" /></a></td>
+                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2013/collision-detection-for-composite-finite-elements.html" target="_blank" rel="noopener noreferrer"><img alt="" src="./data/teaser/CGI2013.png" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Efficient Collision Detection for Composite Finite Element Simulation of Cuts in Deformable Bodies</p>
@@ -1595,10 +1542,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2012/residual-stress-modeling.html" target="_blank"><img src="./data/teaser/VCBM2012.png" border="0" width="210" /></a></td>
+                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2012/residual-stress-modeling.html" target="_blank" rel="noopener noreferrer"><img alt="" src="./data/teaser/VCBM2012.png" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Interactive Residual Stress Modeling for Soft Tissue Simulation</p>
@@ -1616,10 +1563,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2011/interactive-high-resolution-boundary-surfaces-for-deformable-bodies-with-changing-topology.html" target="_blank"><img src="./data/teaser/VRIPHYS2011.gif" border="0" width="210" /></a></td>
+                <td width="140"><a href="http://wwwcg.in.tum.de/research/research/publications/2011/interactive-high-resolution-boundary-surfaces-for-deformable-bodies-with-changing-topology.html" target="_blank" rel="noopener noreferrer"><img alt="" src="./data/teaser/VRIPHYS2011.gif" border="0" width="210" /></a></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Interactive High-Resolution Boundary Surfaces for Deformable Bodies with Changing Topology</p>
@@ -1637,10 +1584,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><img src="./data/teaser/JCISE2010.png" border="0" width="210" /></td>
+                <td width="140"><img alt="" src="./data/teaser/JCISE2010.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Toward Stable and Realistic Haptic Interaction for Tooth Preparation Simulation</p>
@@ -1657,10 +1604,10 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
-                <td width="140"><img src="./data/teaser/CASA2010.png" border="0" width="210" /></td>
+                <td width="140"><img alt="" src="./data/teaser/CASA2010.png" border="0" width="210" /></td>
                 <td width="20"></td>
                 <td valign="middle" width="770">
                     <p class="PaperTitle">Smooth Force Rendering on Coarse Polygonal Meshes</p>
@@ -1678,9 +1625,9 @@
 
     <br />
 
-    <p id="virtual-surgery-publication" class="title-large">Past Affiliations</p>
+    <h2 id="past-affiliations" class="title-large">Past Affiliations</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr height="30">
                 <td width="140"><p class="content">2015.12--2016.08</p></td>
@@ -1714,7 +1661,7 @@
         </tbody>
     </table>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
                 <td width="240">
@@ -1724,5 +1671,6 @@
         </tbody>
     </table>
 
+</main>
 </body>
 </html>

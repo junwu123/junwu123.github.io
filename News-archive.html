@@ -1,149 +1,180 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Jun Wu @ TU Delft</title>
-    <style type="text/css">
-        body {
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-left: 100px;
-            margin-right: 100px;      
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Archive | Jun Wu</title>
+    <style>
 
-        p {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
+:root {
+  color-scheme: light;
+  --ink: #202124;
+  --link: #4285f4;
+  --content-link: #990000;
+}
 
-        .caption {
-            font-size: 34px;
-            font-weight: normal;
-            color: #000;
-            font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-        }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 30px 100px;
+  background: #fff;
+  color: #000;
+  font: 16px Helvetica, Arial, sans-serif;
+}
+.site-shell { width: auto; margin: 0; padding: 0; }
+p { margin: 0; }
+a { color: var(--link); text-decoration: none; }
+a:visited { color: var(--link); }
+a:hover, a:active { color: #0000ff; }
+a:focus-visible { outline: 3px solid #f2bd45; outline-offset: 3px; }
+.content {
+  color: #000;
+  font: lighter 16px Helvetica, Arial, sans-serif;
+}
+.content a { color: var(--content-link); }
+.caption {
+  margin: 0;
+  color: #000;
+  font: normal 34px Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+.caption-1, .caption-2, .caption-3, .PaperTitle, .PaperVenue,
+.highlight, .title-small, .title-large { font-family: Helvetica, Arial, sans-serif; }
+.caption-1, .caption-2, .caption-3, .PaperTitle, .PaperVenue,
+.highlight, .content { font-size: 16px; }
+.caption-2 { color: #990000; font-weight: bold; }
+.caption-3, .highlight { color: #db4437; font-weight: bold; }
+.PaperTitle { font-weight: normal; }
+.PaperVenue { font-style: italic; font-weight: lighter; }
+.title-large {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+}
+.title-small {
+  margin: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: normal;
+}
+.margin { font-size: 10px; line-height: 10px; }
+.margin-small { font-size: 5px; line-height: 5px; }
+.margin-large { font-size: 16px; line-height: 16px; }
+table { width: auto; max-width: 100%; border: 0; border-collapse: collapse; }
+td { padding: 0; vertical-align: top; }
+td img { display: block; max-width: 100%; height: auto; }
+ul { margin: .35rem 0 1rem; padding-left: 1.4rem; }
+li { margin: .25rem 0; }
 
-        .caption-1 {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-        }
+@media (max-width: 900px) {
+  body { margin: 24px 5vw; }
+  table { max-width: 100%; }
+}
+@media (max-width: 680px) {
+  body { margin: 16px; }
+  .site-shell { width: auto; }
+  table, tbody, tr, td { display: block; width: 100% !important; }
+  tr { margin: 0 0 1rem; }
+  td { padding: .15rem 0; }
+  td:empty { display: none; }
+  body > main > table:first-of-type tr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    align-items: center;
+  }
+  body > main > table:first-of-type tr > td:first-child {
+    flex: 0 0 9rem;
+    width: 9rem !important;
+  }
+  body > main > table:first-of-type tr > td:first-child img { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
-        .caption-2 {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: bold;
-            color: #990000;
-        }
-
-        .caption-3 {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: bold;
-            color: #F00;
-        }
-
-        .content {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: lighter;
-        }
-
-            .content a {
-                font-size: 16px;
-                font-family: Helvetica, Arial, sans-serif;
-                font-weight: lighter;
-                color: #990000;
-            }
-
-            .content strong a {
-                font-size: 16px;
-                font-family: Helvetica, Arial, sans-serif;
-                font-weight: lighter;
-                color: #990000;
-            }
-
-        .highlight {
-            font-size: 16px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: lighter;
-            color: #DB4437;
-        }
-
-        .title-small {
-            font-size: 18px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: lighter;
-            color: #000;
-        }
-
-        .title-large {
-            font-size: 20px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: lighter;
-            color: #000;
-        }
-
-        .margin {
-            font-size: 10px;
-            line-height: 10px;
-        }
-
-        .margin-small {
-            font-size: 5px;
-            line-height: 5px;
-        }
-
-        .margin-large {
-            font-size: 16px;
-            line-height: 16px;
-        }
-
-        a:link {
-            color: #4285F4;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: #4285F4;
-            text-decoration: none;
-        }
-
-        content a:link {
-            text-decoration: none;
-        }
-
-        content a:visited {
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #0000FF;
-            text-decoration: none;
-        }
-
-        a:active {
-            color: #0000FF;
-            text-decoration: none;
-        }
-
-        strong a:active {
-            color: #0000FF;
-            text-decoration: underline;
-        }
-    </style>
-    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+@media (max-width: 680px) {
+  .news-archive > table:first-of-type tr { display: block; }
+  .news-archive > table:first-of-type tr > td:first-child { width: auto !important; flex: none; }
+}
+</style>
 </head>
 
 
 <body>
+<main class="site-shell news-archive">
 
 
-    <p class="caption">Jun Wu</p>
+    <h1 class="caption">Jun Wu</h1>
 
     <p class="content"><a href="index.html">Back to the main page</a></p>
 
     <br>
 
-        <p id="pub2019" class="title-small">2024</p>
-        <table border="0">
+            <h2 id="2025" class="title-small">2025</h2>
+        <table role="presentation" border="0">
+        <tbody>
+            <tr>
+            <td width="80" style="vertical-align:top"><p class="content">2025.11</p></td>
+                <td width="920">
+                    <p class="content">
+                       The group visited Formnext in Frankfurt. It was great to see the growing popularity of robotic 3D printing, and the advances in 3D printing technology were both impressive and inspiring.
+                    </p>
+                </td>
+            </tr>
+        <tr>
+            <td width="80" style="vertical-align:top"><p class="content">2025.10</p></td>
+                <td width="920">
+                    <p class="content">
+                       In September, we attended the SIM-AM conference in the beautiful city of Pavia. It was wonderful to re-connect with old friends and meet new ones.
+                    </p>
+                </td>
+            </tr>
+        <tr>
+                <td width="80" style="vertical-align:top"><p class="content">2025.10</p></td>
+                <td width="920">
+                    <p class="content">
+                       Multiple articles were published in the past months. Congratulations to Junpeng, Manav, and Wei for the nice work!
+                    </p>
+                </td>
+            </tr>
+        <tr>
+                <td width="80" style="vertical-align:top"><p class="content">2025.6</p></td>
+                <td width="920">
+                    <p class="content">
+                       Kai Wu defended his PhD dissertation on 11th June, 2025. Congrats, Dr. Wu!
+                    </p>
+                </td>
+            </tr>
+	    <tr>
+                <td width="80" style="vertical-align:top"><p class="content">2025.5</p></td>
+                <td width="920">
+                    <p class="content">
+                       At WCSMO in Kobe, I gave a talk on "Recent Advances in Design for Additive Manufacturing". <a href="https://www.dropbox.com/scl/fi/27znfhbztg9emk8cygjtv/SOTA-WCSMO-2025.pdf?rlkey=ta2oobv67u5u7ddbg75eaf5o4&dl=0">Slides</a>
+                    </p>
+                </td>
+            </tr>
+	    <tr>
+                <td width="80" style="vertical-align:top"><p class="content">2025.3</p></td>
+                <td width="920">
+                    <p class="content">
+                        Congrats to Kai Wu and Wei Tong for recent publications, one in Computer Methods in Applied Mechanics and Engineering, and one in Structural and Multidisciplinary Optimization.
+                    </p>
+                </td>
+            </tr>
+	    <tr>
+                <td width="80" style="vertical-align:top"><p class="content">2025.3</p></td>
+                <td width="920">
+                    <p class="content">
+                        Our proposal "AM4Micro: Designing Material Microstructures Through Additive Manufacturing Sequence Planning" is accepted by Dutch Research Council (NWO). This project falls within the Dutch Research Agenda (NWA) "Materials - Made in Holland". <a href="https://www.tudelft.nl/2025/io/maart/ide-projects-receive-nwo-funding-linked-to-nwa-routes">Link</a>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+        <h2 id="2024" class="title-small">2024</h2>
+        <table role="presentation" border="0">
         <tbody>
 
                 <tr>
@@ -175,9 +206,9 @@
 
     <br>
     
-    <p id="pub2019" class="title-small">2023</p>
+    <h2 id="2023" class="title-small">2023</h2>
 
-        <table border="0">
+        <table role="presentation" border="0">
         <tbody>
                 <tr>
                 <td width="80" style="vertical-align:top"><p class="content">2023.10</p></td>
@@ -206,7 +237,7 @@
                 <td width="80" style="vertical-align:top"><p class="content">2023.7</p></td>
                 <td width="920">
                     <p class="content">
-                        Exciting news! My Vidi proposal is granted. I look forward to taking Space-time optimization to the next level. <a href="https://www.tudelft.nl/en/2023/io/june/ide-associate-professor-jun-wu-receives-vidi-grant" , target="_blank">Faculty news</a>
+                        Exciting news! My Vidi proposal is granted. I look forward to taking Space-time optimization to the next level. <a href="https://www.tudelft.nl/en/2023/io/june/ide-associate-professor-jun-wu-receives-vidi-grant" target="_blank">Faculty news</a>
                 </td>
             </tr>
             <tr>
@@ -238,9 +269,9 @@
     
     <br>
 
-    <p id="pub2019" class="title-small">2022</p>
+    <h2 id="2022" class="title-small">2022</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
 
             <tr>
@@ -281,9 +312,9 @@
 
     <br>
 
-    <p id="pub2019" class="title-small">2021</p>
+    <h2 id="2021" class="title-small">2021</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
                 <td width="80" style="vertical-align:top"><p class="content">2021.11</p></td>
@@ -294,13 +325,13 @@
             <tr>
                 <td width="80" style="vertical-align:top"><p class="content">2021.11</p></td>
                 <td width="920">
-                    <p class="content">I was invited to give a talk at <a href="https://www.designforam.ac.uk/events/computational-tools-pushing-the-frontiers-of-dfam/" , target="_blank">Computational Tools: Pushing the Frontiers of DfAM</a>, an event organized by the UK Design for AM Network.</p>
+                    <p class="content">I was invited to give a talk at <a href="https://www.designforam.ac.uk/events/computational-tools-pushing-the-frontiers-of-dfam/" target="_blank">Computational Tools: Pushing the Frontiers of DfAM</a>, an event organized by the UK Design for AM Network.</p>
                 </td>
             </tr>
             <tr>
                 <td width="80" style="vertical-align:top"><p class="content">2021.9</p></td>
                 <td width="920">
-                    <p class="content">It is my great honor to receive the <a href="http://solidmodeling.org/awards/sma-yia/sma-yia-2021/" , target="_blank">Young Investigator Award</a> from the Solid Modelling Association.</p>
+                    <p class="content">It is my great honor to receive the <a href="http://solidmodeling.org/awards/sma-yia/sma-yia-2021/" target="_blank">Young Investigator Award</a> from the Solid Modelling Association.</p>
                 </td>
             </tr>
             <tr>
@@ -318,7 +349,7 @@
             <tr>
                 <td width="80" style="vertical-align:top"><p class="content">2021.3</p></td>
                 <td width="920">
-                    <p class="content">I was invited to give a lecture at GAMM Juniors' Summer School on <a href="https://www.applied.math.tugraz.at/tagungen/samm21/" , target="_blank">Shape and Topology Optimization</a>, Graz, Austria, July 2021.</p>
+                    <p class="content">I was invited to give a lecture at GAMM Juniors' Summer School on <a href="https://www.applied.math.tugraz.at/tagungen/samm21/" target="_blank">Shape and Topology Optimization</a>, Graz, Austria, July 2021.</p>
                 </td>
             </tr>
             <tr>
@@ -343,38 +374,38 @@
     </table>
 
     <br>
-    <p id="pub2019" class="title-small">2020</p>
+    <h2 id="2020" class="title-small">2020</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
                 <td width="900">
                     <p class="content">2020-10-5 The IDEA League summer school “Computational Design for Additive Manufacturing” took place online Sep. 1-11. Despite time-zone differences and the difficult period we are living, 34 passioned students across the globe actively participated in the online school. Thanks to our co-organizers and invited speakers for making a wonderful program!</p>
                     <p class="margin-small">&nbsp;</p>
-                    <p class="content">2020-7-6 Our work on designing with plant roots is accepted to <a href="https://www.springer.com/journal/42242" , target="_blank">Bio-Design and Manufacturing</a>. Congrats to Jiwei! </p>
+                    <p class="content">2020-7-6 Our work on designing with plant roots is accepted to <a href="https://www.springer.com/journal/42242" target="_blank">Bio-Design and Manufacturing</a>. Congrats to Jiwei! </p>
                     <p class="margin-small">&nbsp;</p>
-                    <p class="content">2020-7-6 Our work on soft robotic fish is accepted to <a href="http://livingmachinesconference.eu/2020/" , target="_blank">Living Machines 2020</a>. This work was reported by <a href="https://www.dezeen.com/2019/09/11/robotic-fish-rosander-van-den-berg-tu-delft-robotic-underwater-drone/" , target="_blank">Dezeen</a> last year. Congrats to Sander and Rob! </p>
+                    <p class="content">2020-7-6 Our work on soft robotic fish is accepted to <a href="http://livingmachinesconference.eu/2020/" target="_blank">Living Machines 2020</a>. This work was reported by <a href="https://www.dezeen.com/2019/09/11/robotic-fish-rosander-van-den-berg-tu-delft-robotic-underwater-drone/" target="_blank">Dezeen</a> last year. Congrats to Sander and Rob! </p>
                     <p class="margin-small">&nbsp;</p>
-                    <p class="content">2020-7-1 Summer school on <a href="https://idealeague.org/computationaldesign/" , target="_blank">Computational Design for Additive Manufacturing</a> will take place online, Sep. 1-11, 2020. It is supported by the IDEA League and the Design Society. </p>
+                    <p class="content">2020-7-1 Summer school on <a href="https://idealeague.org/computationaldesign/" target="_blank">Computational Design for Additive Manufacturing</a> will take place online, Sep. 1-11, 2020. It is supported by the IDEA League and the Design Society. </p>
                     <p class="margin-small">&nbsp;</p>
                     <p class="content">2020-6-15 Our work on toolpath planning with adaptive width is accepted for publication in CAD. Congrats to Tim!</p>
                     <p class="margin-small">&nbsp;</p>
-                    <p class="content">2020-6-5 We are pleased to announce the <a href="http://top-webinar.org/" , target="_blank">TOP Webinar</a>, an initiative by colleagues at DTU Denmark and TU Delft. The first session received 565 registrants! </p>
+                    <p class="content">2020-6-5 We are pleased to announce the <a href="http://top-webinar.org/" target="_blank">TOP Webinar</a>, an initiative by colleagues at DTU Denmark and TU Delft. The first session received 565 registrants! </p>
                     <p class="margin-small">&nbsp;</p>
-                    <p class="content">2020-3-17 A joint work with Junpeng and Rüdiger on stress tensor visualization is accepted to <a href="https://conferences.eg.org/egev20/" , target="_blank">Eurovis 2020</a>. Congratulations! </p>
+                    <p class="content">2020-3-17 A joint work with Junpeng and Rüdiger on stress tensor visualization is accepted to <a href="https://conferences.eg.org/egev20/" target="_blank">Eurovis 2020</a>. Congratulations! </p>
                     <p class="margin-small">&nbsp;</p>
-                    <p class="content">2020-1-24 Weiming has been selected as a recipent of <a href="https://www.issmo.net/" , target="_blank">ISSMO/Springer prize</a> for our paper "Space-time topology optimization for additive manufacturing". Congratulations! </p>
+                    <p class="content">2020-1-24 Weiming has been selected as a recipent of <a href="https://www.issmo.net/" target="_blank">ISSMO/Springer prize</a> for our paper "Space-time topology optimization for additive manufacturing". Congratulations! </p>
                     <p class="margin-small">&nbsp;</p>
-                    <p class="content">2020-1-22 Congratulations to Alice and Rob for a paper accepted to <a href="http://robosoft2020.org/" , target="_blank">RoboSoft 2020</a>! </p>
+                    <p class="content">2020-1-22 Congratulations to Alice and Rob for a paper accepted to <a href="http://robosoft2020.org/" target="_blank">RoboSoft 2020</a>! </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
     <br>
-    <p id="pub2019" class="title-small">2019</p>
+    <h2 id="2019" class="title-small">2019</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
                 <td width="900">
@@ -409,9 +440,9 @@
     </table>
 
     <br>
-    <p id="pub2019" class="title-small">2018</p>
+    <h2 id="2018" class="title-small">2018</h2>
 
-    <table border="0">
+    <table role="presentation" border="0">
         <tbody>
             <tr>
                 <td width="900">
@@ -436,5 +467,6 @@
     <br />
     <p class="content"></p>
     <br />
+</main>
 </body>
 </html>
